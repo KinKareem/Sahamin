@@ -1,0 +1,212 @@
+[
+ {
+  "c": "BBCA",
+  "n": "Bank Central Asia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BBRI",
+  "n": "Bank Rakyat Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BMRI",
+  "n": "Bank Mandiri",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BBNI",
+  "n": "Bank Negara Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BRIS",
+  "n": "Bank Syariah Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "TLKM",
+  "n": "Telkom Indonesia",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "EXCL",
+  "n": "XL Axiata",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "ISAT",
+  "n": "Indosat Ooredoo Hutchison",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "JSMR",
+  "n": "Jasa Marga",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "TOWR",
+  "n": "Sarana Menara Nusantara",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "GOTO",
+  "n": "GoTo Gojek Tokopedia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "BUKA",
+  "n": "Bukalapak.com",
+  "s": "Teknologi"
+ },
+ {
+  "c": "EMTK",
+  "n": "Elang Mahkota Teknologi",
+  "s": "Teknologi"
+ },
+ {
+  "c": "ADRO",
+  "n": "Alamtri Resources Indonesia",
+  "s": "Energi"
+ },
+ {
+  "c": "PTBA",
+  "n": "Bukit Asam",
+  "s": "Energi"
+ },
+ {
+  "c": "ITMG",
+  "n": "Indo Tambangraya Megah",
+  "s": "Energi"
+ },
+ {
+  "c": "BUMI",
+  "n": "Bumi Resources",
+  "s": "Energi"
+ },
+ {
+  "c": "PGAS",
+  "n": "Perusahaan Gas Negara",
+  "s": "Energi"
+ },
+ {
+  "c": "MEDC",
+  "n": "Medco Energi Internasional",
+  "s": "Energi"
+ },
+ {
+  "c": "ANTM",
+  "n": "Aneka Tambang",
+  "s": "Bahan Baku"
+ },
+ {
+  "c": "INCO",
+  "n": "Vale Indonesia",
+  "s": "Bahan Baku"
+ },
+ {
+  "c": "MDKA",
+  "n": "Merdeka Copper Gold",
+  "s": "Bahan Baku"
+ },
+ {
+  "c": "TINS",
+  "n": "Timah",
+  "s": "Bahan Baku"
+ },
+ {
+  "c": "SMGR",
+  "n": "Semen Indonesia",
+  "s": "Bahan Baku"
+ },
+ {
+  "c": "INKP",
+  "n": "Indah Kiat Pulp & Paper",
+  "s": "Bahan Baku"
+ },
+ {
+  "c": "UNVR",
+  "n": "Unilever Indonesia",
+  "s": "Barang Konsumsi"
+ },
+ {
+  "c": "ICBP",
+  "n": "Indofood CBP Sukses Makmur",
+  "s": "Barang Konsumsi"
+ },
+ {
+  "c": "INDF",
+  "n": "Indofood Sukses Makmur",
+  "s": "Barang Konsumsi"
+ },
+ {
+  "c": "MYOR",
+  "n": "Mayora Indah",
+  "s": "Barang Konsumsi"
+ },
+ {
+  "c": "GGRM",
+  "n": "Gudang Garam",
+  "s": "Barang Konsumsi"
+ },
+ {
+  "c": "HMSP",
+  "n": "HM Sampoerna",
+  "s": "Barang Konsumsi"
+ },
+ {
+  "c": "ASII",
+  "n": "Astra International",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "UNTR",
+  "n": "United Tractors",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "KLBF",
+  "n": "Kalbe Farma",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "MIKA",
+  "n": "Mitra Keluarga Karyasehat",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "HEAL",
+  "n": "Medikaloka Hermina",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "BSDE",
+  "n": "Bumi Serpong Damai",
+  "s": "Properti"
+ },
+ {
+  "c": "CTRA",
+  "n": "Ciputra Development",
+  "s": "Properti"
+ },
+ {
+  "c": "SMRA",
+  "n": "Summarecon Agung",
+  "s": "Properti"
+ },
+ {
+  "c": "ACES",
+  "n": "Aspirasi Hidup Indonesia",
+  "s": "Konsumsi Non-Primer"
+ },
+ {
+  "c": "MAPI",
+  "n": "Mitra Adiperkasa",
+  "s": "Konsumsi Non-Primer"
+ },
+ {
+  "c": "AMRT",
+  "n": "Sumber Alfaria Trijaya",
+  "s": "Konsumsi Primer"
+ }
+]

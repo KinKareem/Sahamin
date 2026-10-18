@@ -1,0 +1,10 @@
+[
+  { "name": "CNBC Indonesia", "url": "https://www.cnbcindonesia.com/market/rss/" },
+  { "name": "Kontan", "url": "https://rss.kontan.co.id/news/keuangan" },
+  { "name": "Antara Bursa", "url": "https://www.antaranews.com/rss/ekonomi-bursa.xml" },
+  { "name": "Antara Finansial", "url": "https://www.antaranews.com/rss/ekonomi-finansial.xml" },
+  { "name": "detikFinance", "url": "https://finance.detik.com/rss" },
+  { "name": "CNN Indonesia Ekonomi", "url": "https://www.cnnindonesia.com/ekonomi/rss" },
+  { "name": "CNN Indonesia Internasional", "url": "https://www.cnnindonesia.com/internasional/rss" },
+  { "name": "Antara Internasional", "url": "https://www.antaranews.com/rss/dunia-internasional.xml" }
+]

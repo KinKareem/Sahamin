@@ -1,152 +1,849 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sahamin – Saham dan berita pasar modal Indonesia</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#fff;--surface:#f7f8fa;--line:#e8eaee;--ink:#12151c;--mute:#6b7280;--accent:#2f4bff;--accent-soft:#eef1ff;--up:#0f9d58;--down:#e5484d;--red:#e5484d;--blue:#2f6bff;--yellow:#f5b700;--green:#0f9d58;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1117;--surface:#171a22;--line:#262a35;--ink:#f1f3f8;--mute:#9aa1b2;--accent:#7b8cff;--accent-soft:#1c2140;--up:#3ecf8e;--down:#ff6b70;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0f1117;--surface:#171a22;--line:#262a35;--ink:#f1f3f8;--mute:#9aa1b2;--accent:#7b8cff;--accent-soft:#1c2140;--up:#3ecf8e;--down:#ff6b70;color-scheme:dark}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-button,input,select{font:inherit;color:inherit}
-:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.top{display:flex;align-items:center;gap:24px;height:64px;padding:0 24px;border-bottom:1px solid var(--line)}
-.logo{font-weight:800;font-size:20px;letter-spacing:-.02em}
-.logo i{font-style:normal;color:var(--accent)}
-.search{display:flex;margin-bottom:10px;align-items:center;gap:8px;background:var(--surface);border:1px solid transparent;border-radius:12px;padding:0 14px}
-.search:focus-within{border-color:var(--accent);background:var(--bg)}
-.search input{flex:1;border:0;outline:0;background:none;padding:10px 0;font-size:14px;min-width:0}
-.shell{display:grid;grid-template-columns:300px 1fr;align-items:start}
-.side{position:sticky;top:0;height:calc(100vh - 64px);display:flex;flex-direction:column;border-right:1px solid var(--line)}
-.side-h{padding:20px 20px 12px}
-.side-h h2{font-size:15px;margin:0 0 10px;display:flex;justify-content:space-between;align-items:baseline}
-.side-h h2 span{font-size:12px;font-weight:500;color:var(--mute)}
-select{width:100%;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:9px 10px;font-size:13px}
-.list{flex:1;overflow-y:auto;padding:0 8px 16px;position:relative}
-.row{display:grid;grid-template-columns:56px 1fr 8px;gap:8px;align-items:center;width:100%;text-align:left;background:none;border:0;border-radius:10px;padding:10px 12px;cursor:pointer}
-.row:hover{background:var(--surface)}
-.row.on{background:var(--accent-soft)}
-.code{font-weight:700;font-size:14px}
-.name{font-size:13px;color:var(--mute);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.row.on .code{color:var(--accent)}
-.empty{padding:24px 12px;font-size:13px;color:var(--mute)}
-.main{padding:28px 32px 56px;min-width:0;max-width:960px}
-.title{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:16px}
-.title h1{margin:0;font-size:28px;letter-spacing:-.03em;line-height:1.15}
-.title p{margin:4px 0 0;font-size:14px;color:var(--mute)}
-.price{text-align:right}
-.price b{display:block;font-size:28px;letter-spacing:-.03em;line-height:1.15}
-.price span{font-size:14px;font-weight:600}
-.up{color:var(--up)}.down{color:var(--down)}
-.ranges{display:flex;gap:4px;margin-bottom:8px}
-.ranges button{border:0;background:none;padding:6px 12px;border-radius:8px;font-size:13px;font-weight:600;color:var(--mute);cursor:pointer}
-.ranges button:hover{background:var(--surface)}
-.ranges button.on{background:var(--accent-soft);color:var(--accent)}
-#chart{position:relative;width:100%;height:340px;touch-action:pan-y}
-#chart svg{display:block;width:100%;height:100%}
-.tip{position:absolute;top:0;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;border-radius:8px;padding:6px 10px;white-space:nowrap;display:none;transform:translateX(-50%)}
-.note{font-size:12px;color:var(--mute);margin:8px 0 0}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:20px 0 0;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.stats div span{display:block;font-size:12px;color:var(--mute)}
-.stats div b{font-size:15px}
-.newsbox{margin-top:36px}
-.newsbox-h{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px}
-.newsbox-h h2{font-size:20px;letter-spacing:-.02em;margin:0}
-.tabs{display:flex;gap:4px;background:var(--surface);padding:4px;border-radius:12px}
-.tabs button{border:0;background:none;padding:8px 16px;border-radius:9px;cursor:pointer;font-weight:600;font-size:13px;color:var(--mute)}
-.tabs button.on{background:var(--bg);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
-.gs{display:flex;justify-content:space-between;align-items:center;gap:12px;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0 4px;font-size:14px}
-.gs b{display:block}.gs span{color:var(--mute);font-size:13px}
-.gs em{font-style:normal;color:var(--accent);font-weight:600}
-.gs:hover{border-color:var(--accent)}
-.news{display:block;padding:16px 4px;border-bottom:1px solid var(--line)}
-.news:hover h3{color:var(--accent)}
-.news h3{margin:0 0 4px;font-size:16px;line-height:1.4;letter-spacing:-.01em}
-.news p{margin:0 0 6px;font-size:14px;color:var(--mute)}
-.meta{font-size:12px;color:var(--mute)}
-footer{margin-top:40px;font-size:12px;color:var(--mute)}
-.top{position:relative}
-.top::after{content:"";position:absolute;left:0;bottom:-1px;width:140px;height:3px;background:linear-gradient(90deg,var(--red) 25%,var(--yellow) 25% 50%,var(--green) 50% 75%,var(--blue) 75%)}
-.az{display:flex;flex-wrap:wrap;gap:2px;margin-top:10px}
-.az button{border:0;background:none;width:24px;height:24px;border-radius:6px;font-size:12px;font-weight:700;color:var(--mute);cursor:pointer;padding:0}
-.az button:hover{background:var(--accent-soft);color:var(--accent)}
-.grp{position:sticky;top:0;z-index:1;background:var(--bg);display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:var(--mute);padding:12px 12px 4px}
-.sd{width:8px;height:8px;border-radius:50%}
-.stats div{padding-top:10px;border-top:3px solid}
-.stats div:nth-child(1){border-color:var(--green)}
-.stats div:nth-child(2){border-color:var(--red)}
-.stats div:nth-child(3){border-color:var(--yellow)}
-.stats div:nth-child(4){border-color:var(--blue)}
-.news{padding:16px 14px;border-left:3px solid var(--blue)}
-#feed a.news:nth-of-type(4n+1){border-left-color:var(--red)}
-#feed a.news:nth-of-type(4n+2){border-left-color:var(--yellow)}
-#feed a.news:nth-of-type(4n+3){border-left-color:var(--green)}
-.ai{background:var(--surface);border-left:3px solid var(--blue);border-radius:10px;padding:12px 16px;margin:12px 0;font-size:14px}
-.ai p{margin:4px 0 0;color:var(--mute)}
-#chart.load svg{opacity:.4}
-@media (max-width:860px){
- .shell{grid-template-columns:1fr}
- .side{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}
- .list{max-height:220px}
- .main{padding:20px 16px 40px}
- .top{padding:0 16px;gap:12px}.logo{font-size:18px}
- #chart{height:260px}
- .stats{grid-template-columns:repeat(2,1fr)}
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sahamin – Saham dan berita pasar modal Indonesia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fafbfc;
+      --surface: #f1f3f6;
+      --line: #e3e6eb;
+      --ink: #1a1d24;
+      --mute: #68707e;
+      color-scheme: light;
+      --accent: #2f4bff;
+      --accent-soft: #eef1ff;
+      --up: #0f9d58;
+      --down: #e5484d;
+      --red: #e5484d;
+      --blue: #2f6bff;
+      --yellow: #f5b700;
+      --green: #0f9d58;
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px)
+    }
+
+    html {
+      scroll-padding-top: env(safe-area-inset-top, 0px)
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+      color: inherit
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      height: 64px;
+      padding: 0 24px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -.02em
+    }
+
+    .logo i {
+      font-style: normal;
+      color: var(--accent)
+    }
+
+    .search {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface);
+      border: 1px solid transparent;
+      border-radius: 12px;
+      padding: 0 14px
+    }
+
+    .search:focus-within {
+      border-color: var(--accent);
+      background: var(--bg)
+    }
+
+    .search input {
+      flex: 1;
+      border: 0;
+      outline: 0;
+      background: none;
+      padding: 10px 0;
+      font-size: 14px;
+      min-width: 0
+    }
+
+    .shell {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      align-items: start
+    }
+
+    .side {
+      position: sticky;
+      top: 0;
+      height: calc(100vh - 64px);
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--line)
+    }
+
+    .side-h {
+      padding: 20px 20px 12px
+    }
+
+    .side-h h2 {
+      font-size: 15px;
+      margin: 0 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline
+    }
+
+    .side-h h2 span {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--mute)
+    }
+
+    select {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 9px 10px;
+      font-size: 13px
+    }
+
+    .list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 0 8px 16px;
+      position: relative
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 8px;
+      align-items: center;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 12px;
+      cursor: pointer
+    }
+
+    .row:hover {
+      background: var(--surface)
+    }
+
+    .code {
+      transition: color .15s
+    }
+
+    .row:hover .code {
+      color: var(--accent)
+    }
+
+    mark {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 4px;
+      padding: 1px 3px;
+      margin: 0 -3px
+    }
+
+    .row.on {
+      background: var(--accent-soft)
+    }
+
+    .code {
+      font-weight: 700;
+      font-size: 14px
+    }
+
+    .name {
+      font-size: 13px;
+      color: var(--mute);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap
+    }
+
+    .row.on .code {
+      color: var(--accent)
+    }
+
+    .empty {
+      padding: 24px 12px;
+      font-size: 13px;
+      color: var(--mute)
+    }
+
+    .main {
+      padding: 28px 32px 56px;
+      min-width: 0;
+      max-width: 960px
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 16px
+    }
+
+    .title h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: -.03em;
+      line-height: 1.15
+    }
+
+    .title p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: var(--mute)
+    }
+
+    .price {
+      text-align: right
+    }
+
+    .price b {
+      display: block;
+      font-size: 28px;
+      letter-spacing: -.03em;
+      line-height: 1.15
+    }
+
+    .price span {
+      font-size: 14px;
+      font-weight: 600
+    }
+
+    .up {
+      color: var(--up)
+    }
+
+    .down {
+      color: var(--down)
+    }
+
+    .ranges {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 8px
+    }
+
+    .ranges button {
+      border: 0;
+      background: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--mute);
+      cursor: pointer
+    }
+
+    .ranges button:hover {
+      background: var(--surface)
+    }
+
+    .ranges button.on {
+      background: var(--accent-soft);
+      color: var(--accent)
+    }
+
+    #chart {
+      position: relative;
+      width: 100%;
+      height: 340px;
+      touch-action: pan-y
+    }
+
+    #chart svg {
+      display: block;
+      width: 100%;
+      height: 100%
+    }
+
+    .tip {
+      position: absolute;
+      top: 0;
+      pointer-events: none;
+      background: var(--ink);
+      color: var(--bg);
+      font-size: 12px;
+      border-radius: 8px;
+      padding: 6px 10px;
+      white-space: nowrap;
+      display: none;
+      transform: translateX(-50%)
+    }
+
+    .note {
+      font-size: 12px;
+      color: var(--mute);
+      margin: 8px 0 0
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: 20px 0 0;
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line)
+    }
+
+    .stats div span {
+      display: block;
+      font-size: 12px;
+      color: var(--mute)
+    }
+
+    .stats div b {
+      font-size: 15px
+    }
+
+    .newsbox {
+      margin-top: 36px
+    }
+
+    .newsbox-h {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 8px
+    }
+
+    .newsbox-h h2 {
+      font-size: 20px;
+      letter-spacing: -.02em;
+      margin: 0
+    }
+
+    .tabs {
+      display: flex;
+      gap: 4px;
+      background: var(--surface);
+      padding: 4px;
+      border-radius: 12px
+    }
+
+    .tabs button {
+      border: 0;
+      background: none;
+      padding: 8px 16px;
+      border-radius: 9px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--mute)
+    }
+
+    .tabs button.on {
+      background: var(--bg);
+      color: var(--ink);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .08)
+    }
+
+    .gs {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin: 12px 0 4px;
+      font-size: 14px
+    }
+
+    .gs b {
+      display: block
+    }
+
+    .gs span {
+      color: var(--mute);
+      font-size: 13px
+    }
+
+    .gs em {
+      font-style: normal;
+      color: var(--accent);
+      font-weight: 600
+    }
+
+    .gs:hover {
+      border-color: var(--accent)
+    }
+
+    .news {
+      display: block;
+      padding: 16px 4px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .news:hover h3 {
+      color: var(--accent)
+    }
+
+    .news h3 {
+      margin: 0 0 4px;
+      font-size: 16px;
+      line-height: 1.4;
+      letter-spacing: -.01em
+    }
+
+    .news p {
+      margin: 0 0 6px;
+      font-size: 14px;
+      color: var(--mute)
+    }
+
+    .meta {
+      font-size: 12px;
+      color: var(--mute)
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: var(--mute)
+    }
+
+    .az {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      margin-top: 10px
+    }
+
+    .az button {
+      border: 0;
+      background: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--mute);
+      cursor: pointer;
+      padding: 0
+    }
+
+    .az button:hover {
+      background: var(--accent-soft);
+      color: var(--accent)
+    }
+
+    .grp {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: var(--bg);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--mute);
+      padding: 10px 12px 4px;
+      margin-top: 6px;
+      border-top: 1px solid var(--line)
+    }
+
+    .grp span:last-child {
+      font-weight: 400
+    }
+
+    .grp:first-child {
+      margin-top: 0;
+      border-top: 0
+    }
+
+    .ai {
+      background: var(--surface);
+      border-left: 3px solid var(--blue);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin: 12px 0;
+      font-size: 14px
+    }
+
+    .ai p {
+      margin: 4px 0 0;
+      color: var(--mute)
+    }
+
+    #chart.load svg {
+      opacity: .4
+    }
+
+    .cbtn {
+      margin-left: auto;
+      border: 1px solid var(--line);
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer
+    }
+
+    .cbtn:hover,
+    .cbtn[aria-expanded="true"] {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent)
+    }
+
+    .shell.chat-open {
+      grid-template-columns: 300px minmax(0, 1fr) 360px
+    }
+
+    .chat {
+      display: none;
+      position: sticky;
+      top: 0;
+      height: calc(100vh - 64px);
+      flex-direction: column;
+      border-left: 1px solid var(--line)
+    }
+
+    .shell.chat-open .chat {
+      display: flex
+    }
+
+    .chat-h {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .chat-h b {
+      font-size: 15px
+    }
+
+    .chat-h button {
+      border: 0;
+      background: none;
+      font-size: 18px;
+      line-height: 1;
+      cursor: pointer;
+      color: var(--mute);
+      border-radius: 8px;
+      width: 32px;
+      height: 32px
+    }
+
+    .chat-h button:hover {
+      background: var(--surface)
+    }
+
+    .chat-log {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+
+    .msg {
+      max-width: 90%;
+      padding: 10px 14px;
+      border-radius: 14px;
+      font-size: 14px;
+      line-height: 1.55;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere
+    }
+
+    .msg.bot {
+      background: var(--surface);
+      align-self: flex-start;
+      border-bottom-left-radius: 4px
+    }
+
+    .msg.user {
+      background: var(--accent);
+      color: #fff;
+      align-self: flex-end;
+      border-bottom-right-radius: 4px
+    }
+
+    .msg.wait {
+      color: var(--mute)
+    }
+
+    .sug {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 0 16px 8px
+    }
+
+    .sug button {
+      border: 1px solid var(--line);
+      background: var(--bg);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      cursor: pointer
+    }
+
+    .sug button:hover {
+      background: var(--surface)
+    }
+
+    .chat-f {
+      display: flex;
+      gap: 8px;
+      align-items: flex-end;
+      padding: 8px 16px 4px
+    }
+
+    .chat-f textarea {
+      flex: 1;
+      resize: none;
+      border: 1px solid var(--line);
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font: inherit;
+      font-size: 14px;
+      max-height: 120px;
+      outline: 0
+    }
+
+    .chat-f textarea:focus {
+      border-color: var(--accent)
+    }
+
+    .chat-f button {
+      border: 0;
+      background: var(--ink);
+      color: #fff;
+      border-radius: 12px;
+      padding: 10px 16px;
+      font-weight: 600;
+      cursor: pointer
+    }
+
+    .chat-n {
+      font-size: 11px;
+      color: var(--mute);
+      margin: 4px 16px 12px
+    }
+
+    .top {
+      position: relative
+    }
+
+    .top::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 140px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--red) 25%, var(--yellow) 25% 50%, var(--green) 50% 75%, var(--blue) 75%)
+    }
+
+    .stats div {
+      padding-top: 10px;
+      border-top: 3px solid
+    }
+
+    .stats div:nth-child(1) {
+      border-color: var(--green)
+    }
+
+    .stats div:nth-child(2) {
+      border-color: var(--red)
+    }
+
+    .stats div:nth-child(3) {
+      border-color: var(--yellow)
+    }
+
+    .stats div:nth-child(4) {
+      border-color: var(--blue)
+    }
+
+    @media (max-width:860px) {
+      .shell.chat-open {
+        grid-template-columns: 1fr
+      }
+
+      .chat {
+        position: fixed;
+        inset: 0;
+        height: auto;
+        z-index: 20;
+        background: var(--bg);
+        border-left: 0;
+        padding-top: env(safe-area-inset-top, 0px)
+      }
+
+      .shell {
+        grid-template-columns: 1fr
+      }
+
+      .side {
+        position: static;
+        height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--line)
+      }
+
+      .list {
+        max-height: 220px
+      }
+
+      .main {
+        padding: 20px 16px 40px
+      }
+
+      .top {
+        padding: 0 16px;
+        gap: 12px
+      }
+
+      .logo {
+        font-size: 18px
+      }
+
+      #chart {
+        height: 260px
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header class="top">
-  <a class="logo" href="#">Saham<i>in</i></a>
-</header>
+  <header class="top">
+    <a class="logo" href="#">Saham<i>in</i></a>
+    <button class="cbtn" id="cbtn" aria-expanded="false" aria-controls="chat">Tanya AI</button>
+  </header>
 
-<div class="shell">
-  <nav class="side" aria-label="Daftar saham">
-    <div class="side-h">
-      <h2>Daftar saham <span id="count"></span></h2>
-      <form class="search" id="sf" onsubmit="return false">
-        <input id="q" type="search" placeholder="Cari kode atau nama saham" autocomplete="off" aria-label="Cari saham">
-      </form>
-      <select id="sec" aria-label="Filter sektor"></select>
-      <div class="az" id="az"></div>
-    </div>
-    <div class="list" id="list"></div>
-  </nav>
-
-  <main class="main">
-    <div class="title">
-      <div><h1 id="hc"></h1><p id="hn"></p></div>
-      <div class="price"><b id="pv"></b><span id="pc"></span></div>
-    </div>
-    <div class="ranges" id="ranges">
-      <button data-d="21">1B</button><button data-d="63">3B</button><button data-d="126">6B</button><button data-d="250" class="on">1T</button>
-    </div>
-    <div id="chart"><div class="tip" id="tip"></div></div>
-    <p class="note">Sumber data: Yahoo Finance. Harga tertunda dan bukan real-time.</p>
-    <div class="stats" id="stats"></div>
-
-    <section class="newsbox">
-      <div class="newsbox-h">
-        <h2 id="nt">Berita</h2>
-        <div class="tabs"><button id="t1" class="on">Terkait saham</button><button id="t2">Pasar global</button></div>
+  <div class="shell">
+    <nav class="side" aria-label="Daftar saham">
+      <div class="side-h">
+        <h2>Daftar saham <span id="count"></span></h2>
+        <form class="search" id="sf" onsubmit="return false">
+          <input id="q" type="search" placeholder="Cari kode atau nama saham" autocomplete="off"
+            aria-label="Cari saham">
+        </form>
+        <select id="sec" aria-label="Filter sektor"></select>
+        <div class="az" id="az"></div>
       </div>
-      <div id="feed"></div>
-      <p class="note">Berita diambil dari Google News. Ringkasan AI dibuat dari judul berita dan bukan rekomendasi investasi.</p>
-    </section>
-    <footer>Konten hanya untuk informasi dan bukan rekomendasi untuk membeli atau menjual saham.</footer>
-  </main>
-</div>
+      <div class="list" id="list"></div>
+    </nav>
 
-<script src="/api/stocks.js"></script>
-<script>
-const RAW=`BBCA|Bank Central Asia|Keuangan
+    <main class="main">
+      <div class="title">
+        <div>
+          <h1 id="hc"></h1>
+          <p id="hn"></p>
+        </div>
+        <div class="price"><b id="pv"></b><span id="pc"></span></div>
+      </div>
+      <div class="ranges" id="ranges">
+        <button data-d="21">1B</button><button data-d="63">3B</button><button data-d="126">6B</button><button
+          data-d="250" class="on">1T</button>
+      </div>
+      <div id="chart">
+        <div class="tip" id="tip"></div>
+      </div>
+      <p class="note">Sumber data: Yahoo Finance. Harga tertunda dan bukan real-time.</p>
+      <div class="stats" id="stats"></div>
+
+      <section class="newsbox">
+        <div class="newsbox-h">
+          <h2 id="nt">Berita</h2>
+          <div class="tabs"><button id="t1" class="on">Terkait saham</button><button id="t2">Pasar global</button></div>
+        </div>
+        <div id="feed"></div>
+        <p class="note">Berita diambil dari RSS portal berita Indonesia (CNBC Indonesia, Kontan, Antara, detikFinance,
+          CNN Indonesia), dengan Google News sebagai cadangan. Ringkasan AI dibuat dari judul berita dan bukan
+          rekomendasi investasi.</p>
+      </section>
+      <footer>Konten hanya untuk informasi dan bukan rekomendasi untuk membeli atau menjual saham.</footer>
+    </main>
+
+    <aside class="chat" id="chat" aria-label="Asisten AI">
+      <div class="chat-h"><b>Asisten saham</b><button id="cclose" aria-label="Tutup asisten">&times;</button></div>
+      <div class="chat-log" id="clog"></div>
+      <div class="sug" id="sug">
+        <button data-t="Jelaskan secara singkat tentang saham yang sedang saya lihat.">Jelaskan saham ini</button>
+        <button data-t="Apa arti PER dan PBV, dan bagaimana membacanya?">Apa itu PER dan PBV?</button>
+        <button data-t="Faktor apa saja yang memengaruhi sektor saham ini?">Faktor sektor ini</button>
+      </div>
+      <form class="chat-f" id="cf"><textarea id="ci" rows="1" placeholder="Tanyakan seputar saham"
+          aria-label="Pesan"></textarea><button type="submit">Kirim</button></form>
+      <p class="chat-n">AI bisa keliru dan tidak memberi rekomendasi beli atau jual.</p>
+    </aside>
+  </div>
+
+  <script src="/api/stocks.js"></script>
+  <script>
+    const RAW = `BBCA|Bank Central Asia|Keuangan
 BBRI|Bank Rakyat Indonesia|Keuangan
 BMRI|Bank Mandiri|Keuangan
 BBNI|Bank Negara Indonesia|Keuangan
@@ -188,120 +885,149 @@ SMRA|Summarecon Agung|Properti
 ACES|Aspirasi Hidup Indonesia|Konsumsi Non-Primer
 MAPI|Mitra Adiperkasa|Konsumsi Non-Primer
 AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
-const S=(window.STOCKS&&window.STOCKS.length)?window.STOCKS:RAW.split("\n").map(l=>{const [c,n,s]=l.split("|");return{c,n,s}});
-const GLOBAL=[
- ["Keputusan suku bunga The Fed dan dampaknya ke rupiah","Arah bunga acuan AS memengaruhi arus dana asing di bursa Indonesia.","The Fed rupiah IHSG"],
- ["Harga batu bara dunia bergerak, saham energi disorot","Permintaan dari China dan India menjadi penentu harga komoditas.","harga batu bara saham energi"],
- ["Harga nikel global dan prospek emiten tambang","Pasokan dan permintaan baterai kendaraan listrik memengaruhi sektor nikel.","harga nikel emiten Indonesia"],
- ["Data ekonomi China dan efeknya ke pasar Asia","Pemulihan atau perlambatan China berimbas ke ekspor komoditas Indonesia.","ekonomi China pasar saham Asia"],
- ["Harga minyak mentah dan saham migas Indonesia","Pergerakan harga minyak memengaruhi pendapatan emiten energi.","harga minyak saham migas Indonesia"]];
-const gn=q=>"https://news.google.com/search?hl=id&gl=ID&ceid=ID:id&q="+encodeURIComponent(q);
-const $=id=>document.getElementById(id);
-const fmt=n=>n.toLocaleString("id-ID",{maximumFractionDigits:0});
-let sector="Semua",query="",sel=S[0],days=250,tab=1;
+    const S = (window.STOCKS && window.STOCKS.length) ? window.STOCKS : RAW.split("\n").map(l => { const [c, n, s] = l.split("|"); return { c, n, s } });
+    const GLOBAL = [
+      ["Keputusan suku bunga The Fed dan dampaknya ke rupiah", "Arah bunga acuan AS memengaruhi arus dana asing di bursa Indonesia.", "The Fed rupiah IHSG"],
+      ["Harga batu bara dunia bergerak, saham energi disorot", "Permintaan dari China dan India menjadi penentu harga komoditas.", "harga batu bara saham energi"],
+      ["Harga nikel global dan prospek emiten tambang", "Pasokan dan permintaan baterai kendaraan listrik memengaruhi sektor nikel.", "harga nikel emiten Indonesia"],
+      ["Data ekonomi China dan efeknya ke pasar Asia", "Pemulihan atau perlambatan China berimbas ke ekspor komoditas Indonesia.", "ekonomi China pasar saham Asia"],
+      ["Harga minyak mentah dan saham migas Indonesia", "Pergerakan harga minyak memengaruhi pendapatan emiten energi.", "harga minyak saham migas Indonesia"]];
+    const gn = q => "https://news.google.com/search?hl=id&gl=ID&ceid=ID:id&q=" + encodeURIComponent(q);
+    const $ = id => document.getElementById(id);
+    const fmt = n => n.toLocaleString("id-ID", { maximumFractionDigits: 0 });
+    let sector = "Semua", query = "", sel = S[0], days = 250, tab = 1;
 
-/* data simulasi, deterministik per kode saham */
-function rng(seed){return()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
-function hash(s){let h=7;for(const ch of s)h=Math.imul(h,31)+ch.charCodeAt(0)|0;return Math.abs(h)}
-const cache={};
-async function series(c){
-  if(cache[c])return cache[c];
-  const r=await fetch("/api/chart/"+c);
-  if(!r.ok)throw new Error("Gagal memuat data");
-  const j=await r.json();
-  return cache[c]=j.points.map(x=>({d:new Date(x.t),p:x.p}));
-}
+    /* data simulasi, deterministik per kode saham */
+    function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296 } }
+    function hash(s) { let h = 7; for (const ch of s) h = Math.imul(h, 31) + ch.charCodeAt(0) | 0; return Math.abs(h) }
+    const cache = {};
+    async function series(c) {
+      if (cache[c]) return cache[c];
+      const r = await fetch("/api/chart/" + c);
+      if (!r.ok) throw new Error("Gagal memuat data");
+      const j = await r.json();
+      return cache[c] = j.points.map(x => ({ d: new Date(x.t), p: x.p }));
+    }
 
-function renderSide(){
-  const q=query.trim().toLowerCase();
-  const f=S.filter(x=>(sector==="Semua"||x.s===sector)&&(!q||x.c.toLowerCase().includes(q)||x.n.toLowerCase().includes(q)));
-  $("count").textContent=f.length+" emiten";
-  const g={};f.forEach(x=>(g[x.c[0]]=g[x.c[0]]||[]).push(x));
-  const ks=Object.keys(g).sort();
-  $("az").innerHTML=ks.map(k=>`<button data-k="${k}" aria-label="Loncat ke ${k}">${k}</button>`).join("");
-  $("list").innerHTML=ks.length?ks.map(k=>`<div class="grp" id="g-${k}"><span>${k}</span><span>${g[k].length}</span></div>`+g[k].map(x=>`<button class="row ${x.c===sel.c?"on":""}" data-c="${x.c}"><span class="code">${x.c}</span><span class="name">${x.n}</span><i class="sd" style="background:${SC[x.s]}"></i></button>`).join("")).join(""):`<div class="empty">Tidak ada saham yang cocok. Tekan Enter untuk mencarinya di Google News.</div>`;
-}
+    function hl(c, q) { if (!q) return c; const i = c.toLowerCase().indexOf(q); return i < 0 ? c : c.slice(0, i) + "<mark>" + c.slice(i, i + q.length) + "</mark>" + c.slice(i + q.length) }
+    function renderSide() {
+      const q = query.trim().toLowerCase();
+      const f = S.filter(x => (sector === "Semua" || x.s === sector) && (!q || x.c.toLowerCase().includes(q) || x.n.toLowerCase().includes(q)));
+      if (q) f.sort((a, b) => (+b.c.toLowerCase().includes(q)) - (+a.c.toLowerCase().includes(q)));
+      $("count").textContent = f.length + " emiten";
+      const g = {}; f.forEach(x => (g[x.c[0]] = g[x.c[0]] || []).push(x));
+      const ks = Object.keys(g).sort();
+      $("az").innerHTML = ks.map(k => `<button data-k="${k}" aria-label="Loncat ke ${k}">${k}</button>`).join("");
+      $("list").innerHTML = ks.length ? ks.map(k => `<div class="grp" id="g-${k}"><span>${k}</span><span>${g[k].length}</span></div>` + g[k].map(x => `<button class="row ${x.c === sel.c ? "on" : ""}" data-c="${x.c}"><span class="code">${hl(x.c, q)}</span><span class="name">${x.n}</span></button>`).join("")).join("") : `<div class="empty">Tidak ada saham yang cocok. Tekan Enter untuk mencarinya di Google News.</div>`;
+    }
 
-async function renderChart(){
-  const box=$("chart"),cur=sel.c;let all;
-  $("hc").textContent=sel.c;$("hn").textContent=sel.n+" · "+sel.s;
-  box.classList.add("load");
-  try{all=await series(cur)}catch(e){
-    if(cur!==sel.c)return;
-    box.classList.remove("load");box.querySelector("svg")?.remove();
-    $("pv").textContent="–";$("pc").className="";$("pc").textContent="Data harga belum tersedia";$("stats").innerHTML="";return}
-  if(cur!==sel.c)return;
-  box.classList.remove("load");
-  const data=all.slice(-days);
-  const W=box.clientWidth||700,H=box.clientHeight||320,pl=8,pr=56,pt=12,pb=26;
-  const ps=data.map(x=>x.p),lo=Math.min(...ps),hi=Math.max(...ps),pad=(hi-lo)*.1||1;
-  const mn=lo-pad,mx=hi+pad;
-  const X=i=>pl+i*(W-pl-pr)/(data.length-1),Y=p=>pt+(mx-p)*(H-pt-pb)/(mx-mn);
-  const up=data[data.length-1].p>=data[0].p,col=up?"var(--up)":"var(--down)";
-  const line=data.map((x,i)=>(i?"L":"M")+X(i).toFixed(1)+","+Y(x.p).toFixed(1)).join("");
-  const area=line+`L${X(data.length-1)},${H-pb}L${X(0)},${H-pb}Z`;
-  let g="";
-  for(let k=0;k<5;k++){const v=mn+(mx-mn)*k/4,y=Y(v);g+=`<line x1="${pl}" x2="${W-pr}" y1="${y}" y2="${y}" stroke="var(--line)"/><text x="${W-pr+8}" y="${y+4}" font-size="11" fill="var(--mute)">${fmt(v)}</text>`}
-  const ticks=4;
-  for(let k=0;k<=ticks;k++){const i=Math.round(k*(data.length-1)/ticks),d=data[i].d;g+=`<text x="${X(i)}" y="${H-6}" font-size="11" fill="var(--mute)" text-anchor="${k==0?"start":k==ticks?"end":"middle"}">${d.toLocaleDateString("id-ID",{day:"numeric",month:"short"})}</text>`}
-  box.querySelector("svg")?.remove();
-  box.insertAdjacentHTML("afterbegin",`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Grafik harga ${sel.c}"><defs><linearGradient id="gr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".18"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>${g}<path d="${area}" fill="url(#gr)"/><path d="${line}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/><g id="hv" style="display:none"><line id="hl" y1="${pt}" y2="${H-pb}" stroke="var(--mute)" stroke-dasharray="3 3"/><circle id="hd" r="4.5" fill="${col}" stroke="var(--bg)" stroke-width="2"/></g></svg>`);
-  const tip=$("tip"),hv=$("hv"),hl=$("hl"),hd=$("hd");
-  box.onpointermove=e=>{
-    const r=box.getBoundingClientRect(),x=(e.clientX-r.left)*W/r.width;
-    const i=Math.max(0,Math.min(data.length-1,Math.round((x-pl)/((W-pl-pr)/(data.length-1)))));
-    const px=X(i),py=Y(data[i].p);
-    hv.style.display="block";hl.setAttribute("x1",px);hl.setAttribute("x2",px);hd.setAttribute("cx",px);hd.setAttribute("cy",py);
-    tip.style.display="block";tip.style.left=Math.max(50,Math.min(r.width-50,px*r.width/W))+"px";
-    tip.textContent=`Rp ${fmt(data[i].p)} · ${data[i].d.toLocaleDateString("id-ID",{day:"numeric",month:"short",year:"numeric"})}`;
-  };
-  box.onpointerleave=()=>{hv.style.display="none";tip.style.display="none"};
-  /* header + statistik */
-  const last=data[data.length-1].p,first=data[0].p,ch=last-first,pc=ch/first*100;
-  $("hc").textContent=sel.c;$("hn").textContent=sel.n+" · "+sel.s;
-  $("pv").textContent="Rp "+fmt(last);
-  $("pc").className=up?"up":"down";
-  $("pc").textContent=(up?"+":"")+fmt(ch)+" ("+(up?"+":"")+pc.toFixed(2)+"%) dalam periode ini";
-  $("stats").innerHTML=[["Tertinggi","Rp "+fmt(hi)],["Terendah","Rp "+fmt(lo)],["Awal periode","Rp "+fmt(first)],["Akhir periode","Rp "+fmt(last)]].map(a=>`<div><span>${a[0]}</span><b>${a[1]}</b></div>`).join("");
-}
+    async function renderChart() {
+      const box = $("chart"), cur = sel.c; let all;
+      $("hc").textContent = sel.c; $("hn").textContent = sel.n + " · " + sel.s;
+      box.classList.add("load");
+      try { all = await series(cur) } catch (e) {
+        if (cur !== sel.c) return;
+        box.classList.remove("load"); box.querySelector("svg")?.remove();
+        $("pv").textContent = "–"; $("pc").className = ""; $("pc").textContent = "Data harga belum tersedia"; $("stats").innerHTML = ""; return
+      }
+      if (cur !== sel.c) return;
+      box.classList.remove("load");
+      const data = all.slice(-days);
+      const W = box.clientWidth || 700, H = box.clientHeight || 320, pl = 8, pr = 56, pt = 12, pb = 26;
+      const ps = data.map(x => x.p), lo = Math.min(...ps), hi = Math.max(...ps), pad = (hi - lo) * .1 || 1;
+      const mn = lo - pad, mx = hi + pad;
+      const X = i => pl + i * (W - pl - pr) / (data.length - 1), Y = p => pt + (mx - p) * (H - pt - pb) / (mx - mn);
+      const up = data[data.length - 1].p >= data[0].p, col = up ? "var(--up)" : "var(--down)";
+      const line = data.map((x, i) => (i ? "L" : "M") + X(i).toFixed(1) + "," + Y(x.p).toFixed(1)).join("");
+      const area = line + `L${X(data.length - 1)},${H - pb}L${X(0)},${H - pb}Z`;
+      let g = "";
+      for (let k = 0; k < 5; k++) { const v = mn + (mx - mn) * k / 4, y = Y(v); g += `<line x1="${pl}" x2="${W - pr}" y1="${y}" y2="${y}" stroke="var(--line)"/><text x="${W - pr + 8}" y="${y + 4}" font-size="11" fill="var(--mute)">${fmt(v)}</text>` }
+      const ticks = 4;
+      for (let k = 0; k <= ticks; k++) { const i = Math.round(k * (data.length - 1) / ticks), d = data[i].d; g += `<text x="${X(i)}" y="${H - 6}" font-size="11" fill="var(--mute)" text-anchor="${k == 0 ? "start" : k == ticks ? "end" : "middle"}">${d.toLocaleDateString("id-ID", { day: "numeric", month: "short" })}</text>` }
+      box.querySelector("svg")?.remove();
+      box.insertAdjacentHTML("afterbegin", `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Grafik harga ${sel.c}"><defs><linearGradient id="gr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".18"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>${g}<path d="${area}" fill="url(#gr)"/><path d="${line}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/><g id="hv" style="display:none"><line id="hl" y1="${pt}" y2="${H - pb}" stroke="var(--mute)" stroke-dasharray="3 3"/><circle id="hd" r="4.5" fill="${col}" stroke="var(--bg)" stroke-width="2"/></g></svg>`);
+      const tip = $("tip"), hv = $("hv"), hl = $("hl"), hd = $("hd");
+      box.onpointermove = e => {
+        const r = box.getBoundingClientRect(), x = (e.clientX - r.left) * W / r.width;
+        const i = Math.max(0, Math.min(data.length - 1, Math.round((x - pl) / ((W - pl - pr) / (data.length - 1)))));
+        const px = X(i), py = Y(data[i].p);
+        hv.style.display = "block"; hl.setAttribute("x1", px); hl.setAttribute("x2", px); hd.setAttribute("cx", px); hd.setAttribute("cy", py);
+        tip.style.display = "block"; tip.style.left = Math.max(50, Math.min(r.width - 50, px * r.width / W)) + "px";
+        tip.textContent = `Rp ${fmt(data[i].p)} · ${data[i].d.toLocaleDateString("id-ID", { day: "numeric", month: "short", year: "numeric" })}`;
+      };
+      box.onpointerleave = () => { hv.style.display = "none"; tip.style.display = "none" };
+      /* header + statistik */
+      const last = data[data.length - 1].p, first = data[0].p, ch = last - first, pc = ch / first * 100;
+      ctx.harga = { terakhir: last, awalPeriode: first, tertinggi: hi, terendah: lo, hariBursa: data.length };
+      $("hc").textContent = sel.c; $("hn").textContent = sel.n + " · " + sel.s;
+      $("pv").textContent = "Rp " + fmt(last);
+      $("pc").className = up ? "up" : "down";
+      $("pc").textContent = (up ? "+" : "") + fmt(ch) + " (" + (up ? "+" : "") + pc.toFixed(2) + "%) dalam periode ini";
+      $("stats").innerHTML = [["Tertinggi", "Rp " + fmt(hi)], ["Terendah", "Rp " + fmt(lo)], ["Awal periode", "Rp " + fmt(first)], ["Akhir periode", "Rp " + fmt(last)]].map(a => `<div><span>${a[0]}</span><b>${a[1]}</b></div>`).join("");
+    }
 
-let nt=0;
-function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
-function newsCard(n){const d=n.date?new Date(n.date).toLocaleDateString("id-ID",{day:"numeric",month:"short",year:"numeric"}):"";return `<a class="news" href="${esc(n.link)}" target="_blank" rel="noopener"><h3>${esc(n.title)}</h3><span class="meta">${esc(n.source||"")}${n.source&&d?" · ":""}${d}</span></a>`}
-const GLOBAL_Q='(The Fed OR "harga batu bara" OR "harga nikel" OR "ekonomi China" OR "harga minyak") IHSG';
-async function renderNews(){
-  $("t1").classList.toggle("on",tab===1);$("t2").classList.toggle("on",tab===2);
-  const id=++nt;let q;
-  if(tab===1){$("nt").textContent="Berita "+sel.c;q=sel.c+" "+sel.n+" saham"}
-  else{$("nt").textContent="Berita pasar global";q=GLOBAL_Q}
-  $("feed").innerHTML='<div class="empty">Memuat berita…</div>';
-  try{
-    const r=await fetch("/api/news?q="+encodeURIComponent(q)+"&ai=1");
-    if(!r.ok)throw new Error();
-    const j=await r.json();if(id!==nt)return;
-    $("feed").innerHTML=(j.summary?`<div class="ai"><b>Ringkasan AI</b><p>${esc(j.summary)}</p></div>`:"")+
-      (j.items.length?j.items.map(newsCard).join(""):'<div class="empty">Belum ada berita dalam 7 hari terakhir.</div>')+
-      `<a class="gs" href="${gn(q)}" target="_blank" rel="noopener"><div><b>Lihat semua di Google News</b></div><em>Buka</em></a>`;
-  }catch(e){if(id===nt)$("feed").innerHTML='<div class="empty">Berita gagal dimuat. Pastikan server berjalan dan terhubung ke internet.</div>'}
-}
-function select(c){sel=S.find(x=>x.c===c);renderSide();renderChart();renderNews();}
+    let nt = 0;
+    function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])) }
+    function newsCard(n) { const d = n.date ? new Date(n.date).toLocaleDateString("id-ID", { day: "numeric", month: "short", year: "numeric" }) : ""; return `<a class="news" href="${esc(n.link)}" target="_blank" rel="noopener"><h3>${esc(n.title)}</h3><span class="meta">${esc(n.source || "")}${n.source && d ? " · " : ""}${d}</span></a>` }
+    const GLOBAL_Q = '(The Fed OR "harga batu bara" OR "harga nikel" OR "ekonomi China" OR "harga minyak") IHSG';
+    async function renderNews() {
+      $("t1").classList.toggle("on", tab === 1); $("t2").classList.toggle("on", tab === 2);
+      const id = ++nt; let q;
+      if (tab === 1) { $("nt").textContent = "Berita " + sel.c; q = sel.c + " " + sel.n + " saham" }
+      else { $("nt").textContent = "Berita pasar global"; q = GLOBAL_Q }
+      $("feed").innerHTML = '<div class="empty">Memuat berita…</div>';
+      try {
+        const r = await fetch(tab === 1 ? "/api/news?code=" + encodeURIComponent(sel.c) + "&ai=1" : "/api/news?scope=global&ai=1");
+        if (!r.ok) throw new Error();
+        const j = await r.json(); if (id !== nt) return;
+        ctx.beritaTopik = tab === 1 ? sel.c : "pasar global"; ctx.berita = j.items.slice(0, 8).map(i => i.title + " (" + i.source + ")");
+        $("feed").innerHTML = (j.summary ? `<div class="ai"><b>Ringkasan AI</b><p>${esc(j.summary)}</p></div>` : "") +
+          (j.items.length ? j.items.map(newsCard).join("") : '<div class="empty">Belum ada berita dalam 7 hari terakhir.</div>') +
+          `<a class="gs" href="${gn(q)}" target="_blank" rel="noopener"><div><b>Lihat semua di Google News</b></div><em>Buka</em></a>`;
+      } catch (e) { if (id === nt) $("feed").innerHTML = '<div class="empty">Berita gagal dimuat. Pastikan server berjalan dan terhubung ke internet.</div>' }
+    }
+    function select(c) { sel = S.find(x => x.c === c); renderSide(); renderChart(); renderNews(); }
 
-const sectors=["Semua",...new Set(S.map(x=>x.s))];
-const SC={};sectors.forEach((s,i)=>SC[s]=["var(--blue)","var(--red)","var(--yellow)","var(--green)"][i%4]);
-$("az").addEventListener("click",e=>{const b=e.target.closest("[data-k]");if(!b)return;const el=$("g-"+b.dataset.k);if(el)$("list").scrollTop=el.offsetTop-4});
-$("sec").innerHTML=sectors.map(s=>`<option value="${s}">${s==="Semua"?"Semua sektor":s}</option>`).join("");
-$("sec").onchange=e=>{sector=e.target.value;renderSide()};
-$("q").addEventListener("input",e=>{query=e.target.value;renderSide()});
-$("sf").addEventListener("submit",()=>{
-  const q=query.trim().toLowerCase();if(!q)return;
-  const f=S.filter(x=>x.c.toLowerCase().includes(q)||x.n.toLowerCase().includes(q));
-  if(f.length)select(f[0].c);else window.open(gn(query+" saham"),"_blank","noopener");
-});
-$("list").addEventListener("click",e=>{const b=e.target.closest("[data-c]");if(b)select(b.dataset.c)});
-$("ranges").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;days=+b.dataset.d;[...$("ranges").children].forEach(x=>x.classList.toggle("on",x===b));renderChart()});
-$("t1").onclick=()=>{tab=1;renderNews()};$("t2").onclick=()=>{tab=2;renderNews()};
-let rt;window.addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(renderChart,100)});
-renderSide();renderChart();renderNews();
-</script>
+    const sectors = ["Semua", ...new Set(S.map(x => x.s))];
+    const SC = {}; sectors.forEach((s, i) => SC[s] = ["var(--blue)", "var(--red)", "var(--yellow)", "var(--green)"][i % 4]);
+    $("az").addEventListener("click", e => { const b = e.target.closest("[data-k]"); if (!b) return; const el = $("g-" + b.dataset.k); if (el) $("list").scrollTop = el.offsetTop - 4 });
+    $("sec").innerHTML = sectors.map(s => `<option value="${s}">${s === "Semua" ? "Semua sektor" : s}</option>`).join("");
+    $("sec").onchange = e => { sector = e.target.value; renderSide() };
+    $("q").addEventListener("input", e => { query = e.target.value; renderSide() });
+    $("sf").addEventListener("submit", () => {
+      const q = query.trim().toLowerCase(); if (!q) return;
+      const f = S.filter(x => x.c.toLowerCase().includes(q) || x.n.toLowerCase().includes(q));
+      if (f.length) select((S.find(x => x.c.toLowerCase() === q) || f[0]).c); else window.open(gn(query + " saham"), "_blank", "noopener");
+    });
+    $("list").addEventListener("click", e => { const b = e.target.closest("[data-c]"); if (b) select(b.dataset.c) });
+    $("ranges").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; days = +b.dataset.d;[...$("ranges").children].forEach(x => x.classList.toggle("on", x === b)); renderChart() });
+    $("t1").onclick = () => { tab = 1; renderNews() }; $("t2").onclick = () => { tab = 2; renderNews() };
+    let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(renderChart, 100) });
+    renderSide(); renderChart(); renderNews();
+
+    /* ---------- Asisten AI ---------- */
+    const ctx = {}, hist = []; let busy = false;
+    const shell = document.querySelector(".shell"), clog = $("clog");
+    function addMsg(role, text) { const d = document.createElement("div"); d.className = "msg " + role; d.textContent = text; clog.appendChild(d); clog.scrollTop = clog.scrollHeight; return d }
+    function toggleChat(open) { shell.classList.toggle("chat-open", open); $("cbtn").setAttribute("aria-expanded", open); if (open) $("ci").focus() }
+    $("cbtn").onclick = () => toggleChat(!shell.classList.contains("chat-open"));
+    $("cclose").onclick = () => toggleChat(false);
+    addMsg("bot", "Halo! Saya bisa membantu membahas saham Indonesia: istilah dan rasio keuangan, sektor, atau berita yang sedang Anda lihat. Saya tidak memberi saran beli atau jual.");
+    async function send(text) {
+      busy = true; hist.push({ role: "user", content: text }); addMsg("user", text);
+      const w = addMsg("bot", "Sedang menjawab…"); w.classList.add("wait");
+      try {
+        const r = await fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ messages: hist.slice(-12), context: { code: sel.c, name: sel.n, sector: sel.s, ...ctx } }) });
+        const j = await r.json();
+        if (!r.ok) throw new Error(j.error || "Gagal menghubungi asisten.");
+        w.classList.remove("wait"); w.textContent = j.reply; hist.push({ role: "assistant", content: j.reply });
+      } catch (e) { w.classList.remove("wait"); w.textContent = e.message || "Terjadi kesalahan."; hist.pop() }
+      busy = false; clog.scrollTop = clog.scrollHeight;
+    }
+    $("cf").addEventListener("submit", e => { e.preventDefault(); const t = $("ci").value.trim(); if (!t || busy) return; $("ci").value = ""; send(t) });
+    $("ci").addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("cf").requestSubmit() } });
+    $("sug").addEventListener("click", e => { const b = e.target.closest("[data-t]"); if (b && !busy) send(b.dataset.t) });
+  </script>
 </body>
+
 </html>

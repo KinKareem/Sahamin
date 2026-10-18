@@ -1,68 +1,73 @@
 [
  {
-  "c": "BBCA",
-  "n": "Bank Central Asia",
+  "c": "AADI",
+  "n": "Adaro Andalan Indonesia",
+  "s": "Energi"
+ },
+ {
+  "c": "AALI",
+  "n": "Astra Agro Lestari",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "ABBA",
+  "n": "Mahaka Media",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ABDA",
+  "n": "Asuransi Bina Dana Arta",
   "s": "Keuangan"
  },
  {
-  "c": "BBRI",
-  "n": "Bank Rakyat Indonesia",
+  "c": "ABMM",
+  "n": "ABM Investama",
+  "s": "Energi"
+ },
+ {
+  "c": "ACES",
+  "n": "Aspirasi Hidup Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ACRO",
+  "n": "Samcro Hyosung Adilestari",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ACST",
+  "n": "Acset Indonusa",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "ADCP",
+  "n": "Adhi Commuter Properti",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "ADES",
+  "n": "Akasha Wira International Tbk",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "ADHI",
+  "n": "Adhi Karya (Persero)",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "ADMF",
+  "n": "Adira Dinamika Multi Finance",
   "s": "Keuangan"
  },
  {
-  "c": "BMRI",
-  "n": "Bank Mandiri",
-  "s": "Keuangan"
+  "c": "ADMG",
+  "n": "Polychem Indonesia",
+  "s": "Barang Baku"
  },
  {
-  "c": "BBNI",
-  "n": "Bank Negara Indonesia",
-  "s": "Keuangan"
- },
- {
-  "c": "BRIS",
-  "n": "Bank Syariah Indonesia",
-  "s": "Keuangan"
- },
- {
-  "c": "TLKM",
-  "n": "Telkom Indonesia",
-  "s": "Infrastruktur"
- },
- {
-  "c": "EXCL",
-  "n": "XL Axiata",
-  "s": "Infrastruktur"
- },
- {
-  "c": "ISAT",
-  "n": "Indosat Ooredoo Hutchison",
-  "s": "Infrastruktur"
- },
- {
-  "c": "JSMR",
-  "n": "Jasa Marga",
-  "s": "Infrastruktur"
- },
- {
-  "c": "TOWR",
-  "n": "Sarana Menara Nusantara",
-  "s": "Infrastruktur"
- },
- {
-  "c": "GOTO",
-  "n": "GoTo Gojek Tokopedia",
-  "s": "Teknologi"
- },
- {
-  "c": "BUKA",
-  "n": "Bukalapak.com",
-  "s": "Teknologi"
- },
- {
-  "c": "EMTK",
-  "n": "Elang Mahkota Teknologi",
-  "s": "Teknologi"
+  "c": "ADMR",
+  "n": "Alamtri Minerals Indonesia",
+  "s": "Energi"
  },
  {
   "c": "ADRO",
@@ -70,13 +75,868 @@
   "s": "Energi"
  },
  {
-  "c": "PTBA",
-  "n": "Bukit Asam",
+  "c": "AEGS",
+  "n": "Anugerah Spareparts Sejahtera",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "AGAR",
+  "n": "Asia Sejahtera Mina",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "AGII",
+  "n": "Samator Indo Gas",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "AGRO",
+  "n": "Bank Raya Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "AGRS",
+  "n": "Bank IBK Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "AHAP",
+  "n": "Asuransi Harta Aman Pratama",
+  "s": "Keuangan"
+ },
+ {
+  "c": "AIMS",
+  "n": "Artha Mahiya Investama",
   "s": "Energi"
  },
  {
-  "c": "ITMG",
-  "n": "Indo Tambangraya Megah",
+  "c": "AISA",
+  "n": "FKS Food Sejahtera",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "AKKU",
+  "n": "Anugerah Kagum Karya Utama",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "AKPI",
+  "n": "Argha Karya Prima Ind.",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "AKRA",
+  "n": "AKR Corporindo",
+  "s": "Energi"
+ },
+ {
+  "c": "AKSI",
+  "n": "Mineral Sumberdaya Mandiri",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "ALDO",
+  "n": "Alkindo Naratama",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "ALII",
+  "n": "Ancara Logistics Indonesia",
+  "s": "Energi"
+ },
+ {
+  "c": "ALKA",
+  "n": "Alakasa Industrindo",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "ALMI",
+  "n": "Alumindo Light Metal Industry",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "ALTO",
+  "n": "Tri Banyan Tirta",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "AMAG",
+  "n": "Asuransi Multi Artha Guna",
+  "s": "Keuangan"
+ },
+ {
+  "c": "AMAN",
+  "n": "Makmur Berkah Amanda",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "AMAR",
+  "n": "Bank Amar Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "AMFG",
+  "n": "Asahimas Flat Glass",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "AMIN",
+  "n": "Ateliers Mecaniques D Indonesie",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "AMMN",
+  "n": "Amman Mineral Internasional",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "AMMS",
+  "n": "Agung Menjangan Mas",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "AMOR",
+  "n": "Ashmore Asset Management Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "AMRT",
+  "n": "Sumber Alfaria Trijaya",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "ANDI",
+  "n": "Andira Agro",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "ANJT",
+  "n": "Austindo Nusantara Jaya",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "ANTM",
+  "n": "ANTAM (Persero)",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "APEX",
+  "n": "Apexindo Pratama Duta",
+  "s": "Energi"
+ },
+ {
+  "c": "APIC",
+  "n": "PACIFIC STRATEGIC FINANCIAL",
+  "s": "Keuangan"
+ },
+ {
+  "c": "APII",
+  "n": "Arita Prima Indonesia",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "APLI",
+  "n": "Asiaplast Industries",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "APLN",
+  "n": "Agung Podomoro Land",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "ARCI",
+  "n": "Archi Indonesia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "AREA",
+  "n": "Dunia Virtual Online",
+  "s": "Teknologi"
+ },
+ {
+  "c": "ARGO",
+  "n": "Argo Pantes",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "ARII",
+  "n": "Atlas Resources",
+  "s": "Energi"
+ },
+ {
+  "c": "ARKA",
+  "n": "Arkha Jayanti Persada",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "ARKO",
+  "n": "Arkora Hydro",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "ARMY",
+  "n": "Armidian Karyatama",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "ARNA",
+  "n": "Arwana Citramulia",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "ARTA",
+  "n": "Arthavest",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ARTI",
+  "n": "Ratu Prabu Energi",
+  "s": "Energi"
+ },
+ {
+  "c": "ARTO",
+  "n": "Bank Jago",
+  "s": "Keuangan"
+ },
+ {
+  "c": "ASBI",
+  "n": "Asuransi Bintang",
+  "s": "Keuangan"
+ },
+ {
+  "c": "ASDM",
+  "n": "Asuransi Dayin Mitra",
+  "s": "Keuangan"
+ },
+ {
+  "c": "ASGR",
+  "n": "Astra Graphia",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "ASHA",
+  "n": "Cilacap Samudera Fishing Industry",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "ASII",
+  "n": "Astra International",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "ASJT",
+  "n": "Asuransi Jasa Tania",
+  "s": "Keuangan"
+ },
+ {
+  "c": "ASLC",
+  "n": "Autopedia Sukses Lestari",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ASLI",
+  "n": "Asri Karya Lestari",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "ASMI",
+  "n": "Asuransi Maximus Graha Persada",
+  "s": "Keuangan"
+ },
+ {
+  "c": "ASPI",
+  "n": "Andalan Sakti Primaindo",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "ASPR",
+  "n": "Asia Pramulia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "ASRI",
+  "n": "ALAM SUTERA REALTY",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "ASRM",
+  "n": "Asuransi Ramayana",
+  "s": "Keuangan"
+ },
+ {
+  "c": "ASSA",
+  "n": "Adi Sarana Armada",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "ATAP",
+  "n": "Trimitra Prawara Goldland Tbk",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "ATIC",
+  "n": "Anabatic Technologies",
+  "s": "Teknologi"
+ },
+ {
+  "c": "ATLA",
+  "n": "Atlantis Subsea Indonesia",
+  "s": "Energi"
+ },
+ {
+  "c": "AUTO",
+  "n": "Astra Otoparts",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "AVIA",
+  "n": "Avia Avian",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "AWAN",
+  "n": "Era Digital Media",
+  "s": "Teknologi"
+ },
+ {
+  "c": "AXIO",
+  "n": "Tera Data Indonusa",
+  "s": "Teknologi"
+ },
+ {
+  "c": "AYAM",
+  "n": "Janu Putra Sejahtera",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "AYLS",
+  "n": "Arkayana Lestari Grup",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "BABP",
+  "n": "Bank MNC Internasional",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BABY",
+  "n": "Multitrend Indo",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BACA",
+  "n": "Bank Capital Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BACH",
+  "n": "Bach Multi Global",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "BAIK",
+  "n": "Bersama Mencapai Puncak",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BAJA",
+  "n": "Saranacentral Bajatama",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "BALI",
+  "n": "Bali Towerindo Sentra Tbk.",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "BANK",
+  "n": "Bank Aladin Syariah",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BAPA",
+  "n": "Bekasi Asri Pemula",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "BAPI",
+  "n": "Bhakti Agung Propertindo",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "BATA",
+  "n": "Sepatu Bata",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BATR",
+  "n": "Benteng Api Technic",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "BAUT",
+  "n": "Mitra Angkasa Sejahtera",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BAYU",
+  "n": "Bayu Buana",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BBCA",
+  "n": "Bank Central Asia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BBHI",
+  "n": "Allo Bank Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BBKP",
+  "n": "Bank KB Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BBLD",
+  "n": "Buana Finance",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BBMD",
+  "n": "Bank Mestika Dharma",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BBNI",
+  "n": "Bank Negara Indonesia (Persero)",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BBRI",
+  "n": "Bank Rakyat Indonesia (Persero)",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BBRM",
+  "n": "Pelayaran Nasional Bina Buana Raya",
+  "s": "Energi"
+ },
+ {
+  "c": "BBSI",
+  "n": "Krom Bank Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BBSS",
+  "n": "Bumi Benowo Sukses Sejahtera",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "BBTN",
+  "n": "Bank Tabungan Negara (Persero)",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BBYB",
+  "n": "Bank Neo Commerce",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BCAP",
+  "n": "MNC Kapital Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BCIC",
+  "n": "Bank JTrust Indonesia Tbk.",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BCIP",
+  "n": "Bumi Citra Permai",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "BDKR",
+  "n": "Berdikari Pondasi Perkasa",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "BDMN",
+  "n": "Bank Danamon Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BEBS",
+  "n": "Berkah Beton Sadaya",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "BEEF",
+  "n": "Estika Tata Tiara",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "BEER",
+  "n": "Jobubu Jarum Minahasa",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "BEKS",
+  "n": "Bank Pembangunan Daerah Banten",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BELI",
+  "n": "Global Digital Niaga",
+  "s": "Teknologi"
+ },
+ {
+  "c": "BELL",
+  "n": "Trisula Textile Industries",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BESS",
+  "n": "Batulicin Nusantara Maritim",
+  "s": "Energi"
+ },
+ {
+  "c": "BEST",
+  "n": "Bekasi Fajar Industrial Estate",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "BFIN",
+  "n": "BFI Finance Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BGTG",
+  "n": "Bank Ganesha",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BHAT",
+  "n": "Bhakti Multi Artha",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BHIT",
+  "n": "MNC Asia Holding",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "BIKA",
+  "n": "Binakarya Jaya Abadi",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "BIKE",
+  "n": "Bhineka Inovasi Ketahanan Energi",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BIMA",
+  "n": "Primarindo Asia Infrastructure",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BINA",
+  "n": "Bank Ina Perdana",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BINO",
+  "n": "Perma Plasindo Tbk",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "BIPI",
+  "n": "Astrindo Nusantara Infrastruktur",
+  "s": "Energi"
+ },
+ {
+  "c": "BIPP",
+  "n": "Bhuwanatala Indah Permai",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "BIRD",
+  "n": "Blue Bird",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "BISI",
+  "n": "BISI INTERNATIONAL",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "BJBR",
+  "n": "Bank Pembangunan Daerah Jawa Barat dan Banten",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BJTM",
+  "n": "Bank Pembangunan Daerah Jawa Timur",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BKDP",
+  "n": "Bukit Darmo Property",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "BKSL",
+  "n": "Sentul City",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "BKSW",
+  "n": "Bank QNB Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BLES",
+  "n": "Superior Prima Sukses",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "BLOG",
+  "n": "Trimitra Trans Persada",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "BLTA",
+  "n": "Berlian Laju Tanker",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "BLTZ",
+  "n": "Graha Layar Prima",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BLUE",
+  "n": "Berkah Prima Perkasa",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "BMAS",
+  "n": "Bank Kasikorn Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BMBL",
+  "n": "Lavender Bina Cendikia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BMHS",
+  "n": "Bundamedik",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "BMRI",
+  "n": "Bank Mandiri (Persero)",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BMSR",
+  "n": "Bintang Mitra Semestaraya",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "BMTR",
+  "n": "Global Mediacom",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BNBA",
+  "n": "Bank Bumi Arta",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BNBR",
+  "n": "Bakrie & Brothers",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "BNGA",
+  "n": "Bank CIMB Niaga",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BNII",
+  "n": "Bank Maybank Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BNLI",
+  "n": "Bank Permata",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BOAT",
+  "n": "Newport Marine Services",
+  "s": "Energi"
+ },
+ {
+  "c": "BOBA",
+  "n": "Formosa Ingredient Factory",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "BOGA",
+  "n": "Apollo Global Interactive",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BOLA",
+  "n": "Bali Bintang Sejahtera",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BOLT",
+  "n": "Garuda Metalindo",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BOSS",
+  "n": "Borneo Olah Sarana Sukses",
+  "s": "Energi"
+ },
+ {
+  "c": "BPFI",
+  "n": "Woori Finance Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BPII",
+  "n": "Batavia Prosperindo Internasional",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BPTR",
+  "n": "Batavia Prosperindo Trans",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "BRAM",
+  "n": "Indo Kordsa",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BREN",
+  "n": "Barito Renewables Energy",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "BRIS",
+  "n": "Bank Syariah Indonesia (Persero)",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BRMS",
+  "n": "Bumi Resources Minerals",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "BRNA",
+  "n": "Berlina",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "BRPT",
+  "n": "Barito Pacific",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "BRRC",
+  "n": "Raja Roti Cemerlang",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "BSBK",
+  "n": "Wulandari Bangun Laksana",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "BSDE",
+  "n": "Bumi Serpong Damai",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "BSIM",
+  "n": "Bank Sinarmas",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BSML",
+  "n": "Bintang Samudera Mandiri Lines",
+  "s": "Energi"
+ },
+ {
+  "c": "BSSR",
+  "n": "Baramulti Suksessarana",
+  "s": "Energi"
+ },
+ {
+  "c": "BSWD",
+  "n": "Bank of India Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BTEK",
+  "n": "Bumi Teknokultura Unggul",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "BTEL",
+  "n": "Bakrie Telecom",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "BTON",
+  "n": "Betonjaya Manunggal",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "BTPN",
+  "n": "Bank SMBC Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BTPS",
+  "n": "Bank BTPN Syariah",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BUAH",
+  "n": "Segar Kumala Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "BUDI",
+  "n": "Budi Starch & Sweetener",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "BUKA",
+  "n": "Bukalapak.com",
+  "s": "Teknologi"
+ },
+ {
+  "c": "BUKK",
+  "n": "Bukaka Teknik Utama",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "BULL",
+  "n": "Buana Lintas Lautan",
   "s": "Energi"
  },
  {
@@ -85,94 +945,914 @@
   "s": "Energi"
  },
  {
-  "c": "PGAS",
-  "n": "Perusahaan Gas Negara",
+  "c": "BUVA",
+  "n": "Bukit Uluwatu Villa",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "BVIC",
+  "n": "Bank Victoria International",
+  "s": "Keuangan"
+ },
+ {
+  "c": "BWPT",
+  "n": "Eagle High Plantations",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "BYAN",
+  "n": "Bayan Resources",
   "s": "Energi"
  },
  {
-  "c": "MEDC",
-  "n": "Medco Energi Internasional",
+  "c": "CAKK",
+  "n": "Cahayaputra Asa Keramik",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "CAMP",
+  "n": "Campina Ice Cream Industry",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "CANI",
+  "n": "Capitol Nusantara Indonesia",
   "s": "Energi"
  },
  {
-  "c": "ANTM",
-  "n": "Aneka Tambang",
-  "s": "Bahan Baku"
+  "c": "CARE",
+  "n": "Metro Healthcare Indonesia",
+  "s": "Kesehatan"
  },
  {
-  "c": "INCO",
-  "n": "Vale Indonesia",
-  "s": "Bahan Baku"
+  "c": "CARS",
+  "n": "Industri dan Perdagangan Bintraco Dharma",
+  "s": "Barang Konsumen Non-Primer"
  },
  {
-  "c": "MDKA",
-  "n": "Merdeka Copper Gold",
-  "s": "Bahan Baku"
+  "c": "CASA",
+  "n": "Capital Financial Indonesia",
+  "s": "Keuangan"
  },
  {
-  "c": "TINS",
-  "n": "Timah",
-  "s": "Bahan Baku"
+  "c": "CASH",
+  "n": "Cashlez Worldwide Indonesia",
+  "s": "Teknologi"
  },
  {
-  "c": "SMGR",
-  "n": "Semen Indonesia",
-  "s": "Bahan Baku"
+  "c": "CASS",
+  "n": "Cahaya Aero Services",
+  "s": "Infrastruktur"
  },
  {
-  "c": "INKP",
-  "n": "Indah Kiat Pulp & Paper",
-  "s": "Bahan Baku"
+  "c": "CBDK",
+  "n": "Bangun Kosambi Sukses",
+  "s": "Properti & Real Estat"
  },
  {
-  "c": "UNVR",
-  "n": "Unilever Indonesia",
-  "s": "Barang Konsumsi"
+  "c": "CBMF",
+  "n": "Cahaya Bintang Medan",
+  "s": "Barang Konsumen Non-Primer"
  },
  {
-  "c": "ICBP",
-  "n": "Indofood CBP Sukses Makmur",
-  "s": "Barang Konsumsi"
+  "c": "CBPE",
+  "n": "Citra Buana Prasida",
+  "s": "Properti & Real Estat"
  },
  {
-  "c": "INDF",
-  "n": "Indofood Sukses Makmur",
-  "s": "Barang Konsumsi"
+  "c": "CBRE",
+  "n": "Cakra Buana Resources Energi",
+  "s": "Energi"
  },
  {
-  "c": "MYOR",
-  "n": "Mayora Indah",
-  "s": "Barang Konsumsi"
+  "c": "CBUT",
+  "n": "Citra Borneo Utama",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "CCSI",
+  "n": "Communication Cable Systems Indonesia",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "CDIA",
+  "n": "Chandra Daya Investasi",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "CEKA",
+  "n": "Wilmar Cahaya Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "CENT",
+  "n": "Centratama Telekomunikasi Indonesia",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "CFIN",
+  "n": "Clipan Finance Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "CGAS",
+  "n": "Citra Nusantara Gemilang",
+  "s": "Energi"
+ },
+ {
+  "c": "CHEK",
+  "n": "Diastika Biotekindo",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "CHEM",
+  "n": "Chemstar Indonesia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "CHIP",
+  "n": "Pelita Teknologi Global",
+  "s": "Teknologi"
+ },
+ {
+  "c": "CINT",
+  "n": "Chitose Internasional",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "CITA",
+  "n": "Cita Mineral Investindo",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "CITY",
+  "n": "Natura City Developments",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "CLAY",
+  "n": "Citra Putra Realty",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "CLEO",
+  "n": "Sariguna Primatirta",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "CLPI",
+  "n": "Colorpak Indonesia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "CMNP",
+  "n": "Citra Marga Nusaphala Persada",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "CMNT",
+  "n": "Cemindo Gemilang",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "CMPP",
+  "n": "AirAsia Indonesia",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "CMRY",
+  "n": "Cisarua Mountain Dairy",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "CNKO",
+  "n": "Exploitasi Energi Indonesia",
+  "s": "Energi"
+ },
+ {
+  "c": "CNMA",
+  "n": "Nusantara Sejahtera Raya",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "COAL",
+  "n": "Black Diamond Resources",
+  "s": "Energi"
+ },
+ {
+  "c": "COCO",
+  "n": "Wahana Interfood Nusantara",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "COIN",
+  "n": "Indokripto Koin Semesta",
+  "s": "Keuangan"
+ },
+ {
+  "c": "COWL",
+  "n": "COWELL DEVELOPMENT",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "CPIN",
+  "n": "Charoen Pokphand Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "CPRI",
+  "n": "Capri Nusa Satu Properti",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "CPRO",
+  "n": "Central Proteina Prima",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "CRAB",
+  "n": "Toba Surimi Industries",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "CRSN",
+  "n": "Carsurin",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "CSAP",
+  "n": "Catur Sentosa Adiprana",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "CSIS",
+  "n": "Cahayasakti Investindo Sukses",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "CSMI",
+  "n": "Cipta Selera Murni",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "CSRA",
+  "n": "Cisadane Sawit Raya",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "CTBN",
+  "n": "Citra Tubindo",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "CTRA",
+  "n": "Ciputra Development",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "CTTH",
+  "n": "Citatah",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "CUAN",
+  "n": "Petrindo Jaya Kreasi",
+  "s": "Energi"
+ },
+ {
+  "c": "CYBR",
+  "n": "ITSEC Asia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "DAAZ",
+  "n": "Daaz Bara Lestari",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "DADA",
+  "n": "Diamond Citra Propertindo",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "DART",
+  "n": "Duta Anggada Realty",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "DATA",
+  "n": "Remala Abadi",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "DAYA",
+  "n": "Duta Intidaya",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "DCII",
+  "n": "DCI Indonesia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "DEAL",
+  "n": "Dewata Freightinternational",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "DEFI",
+  "n": "Danasupra Erapacific",
+  "s": "Keuangan"
+ },
+ {
+  "c": "DEPO",
+  "n": "Caturkarda Depo Bangunan",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "DEWA",
+  "n": "Darma Henwa",
+  "s": "Energi"
+ },
+ {
+  "c": "DEWI",
+  "n": "Dewi Shri Farmindo",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "DFAM",
+  "n": "Dafam Property Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "DGIK",
+  "n": "Nusa Konstruksi Enjiniring",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "DGNS",
+  "n": "Diagnos Laboratorium Utama",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "DGWG",
+  "n": "Delta Giri Wacana",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "DIGI",
+  "n": "Arkadia Digital Media",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "DILD",
+  "n": "Intiland Development",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "DIVA",
+  "n": "Distribusi Voucher Nusantara",
+  "s": "Teknologi"
+ },
+ {
+  "c": "DKFT",
+  "n": "Central Omega Resources",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "DKHH",
+  "n": "Cipta Sarana Medika",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "DLTA",
+  "n": "Delta Djakarta",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "DMAS",
+  "n": "Puradelta Lestari",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "DMMX",
+  "n": "Digital Mediatama Maxima",
+  "s": "Teknologi"
+ },
+ {
+  "c": "DMND",
+  "n": "Diamond Food Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "DNAR",
+  "n": "Bank Oke Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "DNET",
+  "n": "Indoritel Makmur Internasional",
+  "s": "Keuangan"
+ },
+ {
+  "c": "DOID",
+  "n": "BUMA Internasional Grup",
+  "s": "Energi"
+ },
+ {
+  "c": "DOOH",
+  "n": "Era Media Sejahtera",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "DOSS",
+  "n": "Global Sukses Digital",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "DPNS",
+  "n": "Duta Pertiwi Nusantara",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "DPUM",
+  "n": "Dua Putra Utama Makmur",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "DRMA",
+  "n": "Dharma Polimetal",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "DSFI",
+  "n": "Dharma Samudera Fishing Ind.",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "DSNG",
+  "n": "Dharma Satya Nusantara",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "DSSA",
+  "n": "Dian Swastatika Sentosa",
+  "s": "Energi"
+ },
+ {
+  "c": "DUCK",
+  "n": "Jaya Bersama Indo",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "DUTI",
+  "n": "Duta Pertiwi",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "DVLA",
+  "n": "Darya-Varia Laboratoria",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "DWGL",
+  "n": "Dwi Guna Laksana",
+  "s": "Energi"
+ },
+ {
+  "c": "DYAN",
+  "n": "Dyandra Media International",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "EAST",
+  "n": "Eastparc Hotel",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ECII",
+  "n": "Electronic City Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "EDGE",
+  "n": "Indointernet",
+  "s": "Teknologi"
+ },
+ {
+  "c": "EKAD",
+  "n": "Ekadharma International",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "ELIT",
+  "n": "Data Sinergitama Jaya",
+  "s": "Teknologi"
+ },
+ {
+  "c": "ELPI",
+  "n": "Pelayaran Nasional Ekalya Purnamasari",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "ELSA",
+  "n": "Elnusa",
+  "s": "Energi"
+ },
+ {
+  "c": "ELTY",
+  "n": "Bakrieland Development",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "EMAS",
+  "n": "Merdeka Gold Resources",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "EMDE",
+  "n": "Megapolitan Developments",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "EMMI",
+  "n": "Esa Medika Mandiri",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "EMTK",
+  "n": "Elang Mahkota Teknologi",
+  "s": "Teknologi"
+ },
+ {
+  "c": "ENAK",
+  "n": "Champ Resto Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ENRG",
+  "n": "Energi Mega Persada",
+  "s": "Energi"
+ },
+ {
+  "c": "ENVY",
+  "n": "Envy Technologies Indonesia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "ENZO",
+  "n": "Morenzo Abadi Perkasa",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "EPAC",
+  "n": "Megalestari Epack Sentosaraya",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "EPMT",
+  "n": "Enseval Putera Megatrading",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "ERAA",
+  "n": "Erajaya Swasembada",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ERAL",
+  "n": "Sinar Eka Selaras",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ERTX",
+  "n": "Eratex Djaja",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ESIP",
+  "n": "Sinergi Inti Plastindo",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "ESSA",
+  "n": "ESSA Industries Indonesia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "ESTA",
+  "n": "Esta Multi Usaha",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ESTI",
+  "n": "Ever Shine Textile Industry",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ETWA",
+  "n": "Eterindo Wahanatama",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "EURO",
+  "n": "Estee Gold Feet",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "EXCL",
+  "n": "XLSMART Telecom Sejahtera",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "FAPA",
+  "n": "FAP Agri",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "FAST",
+  "n": "Fast Food Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "FASW",
+  "n": "Fajar Surya Wisesa",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "FILM",
+  "n": "MD Entertainment",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "FIMP",
+  "n": "Fimperkasa Utama",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "FIRE",
+  "n": "Alfa Energi Investama",
+  "s": "Energi"
+ },
+ {
+  "c": "FISH",
+  "n": "FKS Multi Agro",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "FITT",
+  "n": "Fortune Resources Investment",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "FLMC",
+  "n": "Falmaco Nonwoven Industri",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "FMII",
+  "n": "Fortune Mate Indonesia",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "FOLK",
+  "n": "Multi Garam Utama",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "FOOD",
+  "n": "Sentra Food Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "FORE",
+  "n": "Fore Kopi Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "FORU",
+  "n": "Fortune Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "FPNI",
+  "n": "Lotte Chemical Titan",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "FUJI",
+  "n": "Fuji Finance Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "FUTR",
+  "n": "Futura Energi Global",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "FWCT",
+  "n": "Wijaya Cahaya Timber",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "GAMA",
+  "n": "Aksara Global Development",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "GDST",
+  "n": "Gunawan Dianjaya Steel",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "GDYR",
+  "n": "Goodyear Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "GEMA",
+  "n": "Gema Grahasarana",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "GEMS",
+  "n": "Golden Energy Mines",
+  "s": "Energi"
  },
  {
   "c": "GGRM",
   "n": "Gudang Garam",
-  "s": "Barang Konsumsi"
+  "s": "Barang Konsumen Primer"
  },
  {
-  "c": "HMSP",
-  "n": "HM Sampoerna",
-  "s": "Barang Konsumsi"
+  "c": "GGRP",
+  "n": "Gunung Raja Paksi",
+  "s": "Barang Baku"
  },
  {
-  "c": "ASII",
-  "n": "Astra International",
+  "c": "GHON",
+  "n": "Gihon Telekomunikasi Indonesia",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "GIAA",
+  "n": "Garuda Indonesia (Persero)",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "GJTL",
+  "n": "Gajah Tunggal",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "GLOB",
+  "n": "Globe Kita Terang",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "GLVA",
+  "n": "Galva Technologies",
+  "s": "Teknologi"
+ },
+ {
+  "c": "GMFI",
+  "n": "Garuda Maintenance Facility Aero Asia",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "GMTD",
+  "n": "Gowa Makassar Tourism Development",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "GOLD",
+  "n": "Visi Telekomunikasi Infrastruktur",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "GOLF",
+  "n": "Intra GolfLink Resorts",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "GOLL",
+  "n": "Golden Plantation",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "GOOD",
+  "n": "Garudafood Putra Putri Jaya",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "GOTO",
+  "n": "GoTo Gojek Tokopedia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "GPRA",
+  "n": "Perdana Gapura Prima",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "GPSO",
+  "n": "Geoprima Solusi",
   "s": "Perindustrian"
  },
  {
-  "c": "UNTR",
-  "n": "United Tractors",
-  "s": "Perindustrian"
+  "c": "GRIA",
+  "n": "Ingria Pratama Capitalindo",
+  "s": "Properti & Real Estat"
  },
  {
-  "c": "KLBF",
-  "n": "Kalbe Farma",
+  "c": "GRPH",
+  "n": "Griptha Putra Persada",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "GRPM",
+  "n": "Graha Prima Mentari",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "GSMF",
+  "n": "Equity Development Investment",
+  "s": "Keuangan"
+ },
+ {
+  "c": "GTBO",
+  "n": "Garda Tujuh Buana",
+  "s": "Energi"
+ },
+ {
+  "c": "GTRA",
+  "n": "Grahaprima Suksesmandiri",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "GTSI",
+  "n": "GTS Internasional",
+  "s": "Energi"
+ },
+ {
+  "c": "GULA",
+  "n": "Aman Agrindo",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "GUNA",
+  "n": "Gunanusa Eramandiri",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "GWSA",
+  "n": "Greenwood Sejahtera",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "GZCO",
+  "n": "Gozco Plantations",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "HADE",
+  "n": "Himalaya Energi Perkasa",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "HAIS",
+  "n": "Hasnur Internasional Shipping",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "HAJJ",
+  "n": "Arsy Buana Travelindo",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "HALO",
+  "n": "Haloni Jane",
   "s": "Kesehatan"
  },
  {
-  "c": "MIKA",
-  "n": "Mitra Keluarga Karyasehat",
-  "s": "Kesehatan"
+  "c": "HATM",
+  "n": "Habco Trans Maritima",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "HBAT",
+  "n": "Minahasa Membangun Hebat",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "HDFA",
+  "n": "Radana Bhaskara Finance",
+  "s": "Keuangan"
+ },
+ {
+  "c": "HDIT",
+  "n": "Hensel Davest Indonesia",
+  "s": "Teknologi"
  },
  {
   "c": "HEAL",
@@ -180,33 +1860,2953 @@
   "s": "Kesehatan"
  },
  {
-  "c": "BSDE",
-  "n": "Bumi Serpong Damai",
-  "s": "Properti"
+  "c": "HELI",
+  "n": "Jaya Trishindo",
+  "s": "Transportasi & Logistik"
  },
  {
-  "c": "CTRA",
-  "n": "Ciputra Development",
-  "s": "Properti"
+  "c": "HERO",
+  "n": "DFI Retail Nusantara",
+  "s": "Barang Konsumen Primer"
  },
  {
-  "c": "SMRA",
-  "n": "Summarecon Agung",
-  "s": "Properti"
+  "c": "HEXA",
+  "n": "Hexindo Adiperkasa",
+  "s": "Perindustrian"
  },
  {
-  "c": "ACES",
-  "n": "Aspirasi Hidup Indonesia",
-  "s": "Konsumsi Non-Primer"
+  "c": "HGII",
+  "n": "Hero Global Investment",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "HILL",
+  "n": "Hillcon",
+  "s": "Energi"
+ },
+ {
+  "c": "HITS",
+  "n": "Humpuss Intermoda Transportasi",
+  "s": "Energi"
+ },
+ {
+  "c": "HKMU",
+  "n": "HK Metals Utama",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "HMSP",
+  "n": "HM Sampoerna",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "HOKI",
+  "n": "Buyung Poetra Sembada",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "HOME",
+  "n": "Hotel Mandarine Regency",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "HOMI",
+  "n": "Grand House Mulia",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "HOPE",
+  "n": "Harapan Duta Pertiwi",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "HOTL",
+  "n": "Saraswati Griya Lestari",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "HRME",
+  "n": "Menteng Heritage Realty",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "HRTA",
+  "n": "Hartadinata Abadi",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "HRUM",
+  "n": "Harum Energy",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "HUMI",
+  "n": "Humpuss Maritim Internasional",
+  "s": "Energi"
+ },
+ {
+  "c": "HYGN",
+  "n": "Ecocare Indo Pasifik",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "IATA",
+  "n": "Karya Pacific Energy",
+  "s": "Energi"
+ },
+ {
+  "c": "IBFN",
+  "n": "Intan Baru Prana",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "IBOS",
+  "n": "Indo Boga Sukses",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "IBST",
+  "n": "Inti Bangun Sejahtera",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "ICBP",
+  "n": "Indofood CBP Sukses Makmur",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "ICON",
+  "n": "Island Concepts Indonesia",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "IDEA",
+  "n": "Idea Indonesia Akademi",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "IDPR",
+  "n": "Indonesia Pondasi Raya",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "IFII",
+  "n": "Indonesia Fibreboard Industry",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "IFSH",
+  "n": "Ifishdeco",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "IGAR",
+  "n": "Champion Pacific Indonesia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "IIKP",
+  "n": "Inti Agri Resources",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "IKAI",
+  "n": "Intikeramik Alamasri Industri",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "IKAN",
+  "n": "Era Mandiri Cemerlang",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "IKBI",
+  "n": "Sumi Indo Kabel",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "IKPM",
+  "n": "Ikapharmindo Putramas",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "IMAS",
+  "n": "Indomobil Sukses Internasional",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "IMJS",
+  "n": "Indomobil Multi Jasa",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "IMPC",
+  "n": "Impack Pratama Industri",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "INAF",
+  "n": "Indofarma",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "INAI",
+  "n": "Indal Aluminium Industry",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "INCF",
+  "n": "Indo Komoditi Korpora",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "INCI",
+  "n": "Intanwijaya Internasional",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "INCO",
+  "n": "Vale Indonesia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "INDF",
+  "n": "Indofood Sukses Makmur",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "INDO",
+  "n": "Royalindo Investa Wijaya",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "INDR",
+  "n": "Indo-Rama Synthetics",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "INDS",
+  "n": "Indospring",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "INDX",
+  "n": "Tanah Laut",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "INDY",
+  "n": "Indika Energy",
+  "s": "Energi"
+ },
+ {
+  "c": "INET",
+  "n": "Sinergi Inti Andalan Prima",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "INKP",
+  "n": "Indah Kiat Pulp & Paper",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "INOV",
+  "n": "Inocycle Technology Group",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "INPC",
+  "n": "Bank Artha Graha Internasional",
+  "s": "Keuangan"
+ },
+ {
+  "c": "INPP",
+  "n": "Indonesian Paradise Property",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "INPS",
+  "n": "Indah Prakasa Sentosa",
+  "s": "Energi"
+ },
+ {
+  "c": "INRU",
+  "n": "Toba Pulp Lestari",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "INTA",
+  "n": "Intraco Penta",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "INTD",
+  "n": "Inter-Delta",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "INTP",
+  "n": "Indocement Tunggal Prakarsa",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "IOTF",
+  "n": "Sumber Sinergi Makmur",
+  "s": "Teknologi"
+ },
+ {
+  "c": "IPAC",
+  "n": "Era Graharealty",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "IPCC",
+  "n": "Indonesia Kendaraan Terminal",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "IPCM",
+  "n": "Jasa Armada Indonesia",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "IPOL",
+  "n": "Indopoly Swakarsa Industry",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "IPPE",
+  "n": "Indo Pureco Pratama",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "IPTV",
+  "n": "MNC Vision Networks",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "IRRA",
+  "n": "Itama Ranoraya",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "IRSX",
+  "n": "Folago Global Nusantara",
+  "s": "Teknologi"
+ },
+ {
+  "c": "ISAP",
+  "n": "Isra Presisi Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ISAT",
+  "n": "Indosat",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "ISEA",
+  "n": "Indo American Seafoods",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "ISSP",
+  "n": "Steel Pipe Industry of Indonesia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "ITIC",
+  "n": "Indonesian Tobacco",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "ITMA",
+  "n": "SUMBER ENERGI ANDALAN",
+  "s": "Energi"
+ },
+ {
+  "c": "ITMG",
+  "n": "Indo Tambangraya Megah",
+  "s": "Energi"
+ },
+ {
+  "c": "JARR",
+  "n": "Jhonlin Agro Raya",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "JAST",
+  "n": "Jasnita Telekomindo Tbk.",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "JATI",
+  "n": "Informasi Teknologi Indonesia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "JAWA",
+  "n": "Jaya Agra Wattie",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "JAYA",
+  "n": "Armada Berjaya Trans",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "JECC",
+  "n": "Jembo Cable Company",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "JECX",
+  "n": "Nitrasanata Dharma",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "JELI",
+  "n": "Niramas Utama",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "JGLE",
+  "n": "Graha Andrasentra Propertindo",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "JIHD",
+  "n": "Jakarta International Hotels & Development",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "JKON",
+  "n": "Jaya Konstruksi Manggala Pratama",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "JMAS",
+  "n": "Asuransi Jiwa Syariah Jasa Mitra Abadi",
+  "s": "Keuangan"
+ },
+ {
+  "c": "JPFA",
+  "n": "JAPFA Comfeed Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "JRPT",
+  "n": "Jaya Real Property",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "JSKY",
+  "n": "Sky Energy Indonesia",
+  "s": "Energi"
+ },
+ {
+  "c": "JSMR",
+  "n": "Jasa Marga",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "JSPT",
+  "n": "Jakarta Setiabudi Internasional",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "JTPE",
+  "n": "Jasuindo Tiga Perkasa",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "KAEF",
+  "n": "Kimia Farma (Persero)",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "KAQI",
+  "n": "Jantra Grupo Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "KARW",
+  "n": "Meratus Jasa Prima",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "KAYU",
+  "n": "Darmi Bersaudara",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "KBAG",
+  "n": "Karya Bersama Anugerah",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "KBLI",
+  "n": "KMI Wire and Cable",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "KBLM",
+  "n": "Kabelindo Murni",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "KBLV",
+  "n": "First Media",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "KBRI",
+  "n": "Kertas Basuki Rachmat Indonesia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "KDSI",
+  "n": "Kedawung Setia Industrial",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "KDTN",
+  "n": "Puri Sentul Permai",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "KEEN",
+  "n": "Kencana Energi Lestari Tbk.",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "KEJU",
+  "n": "Mulia Boga Raya",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "KETR",
+  "n": "Ketrosden Triasmitra",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "KIAS",
+  "n": "Keramika Indonesia Assosiasi",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "KICI",
+  "n": "Kedaung Indah Can",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "KIJA",
+  "n": "Kawasan Industri Jababeka",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "KING",
+  "n": "Hoffmen Cleanindo",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "KINO",
+  "n": "Kino Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "KIOS",
+  "n": "Kioson Komersial Indonesia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "KJEN",
+  "n": "Krida Jaringan Nusantara",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "KKES",
+  "n": "Kusuma Kemindo Sentosa",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "KKGI",
+  "n": "Resource Alam Indonesia",
+  "s": "Energi"
+ },
+ {
+  "c": "KLAS",
+  "n": "Pelayaran Kurnia Lautan Semesta",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "KLBF",
+  "n": "Kalbe Farma",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "KLIN",
+  "n": "Klinko Karya Imaji",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "KMDS",
+  "n": "Kurniamitra Duta Sentosa",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "KMTR",
+  "n": "Kirana Megatara",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "KOBX",
+  "n": "Kobexindo Tractors",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "KOCI",
+  "n": "Kokoh Exa Nusantara",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "KOIN",
+  "n": "Kokoh Inti Arebama",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "KOKA",
+  "n": "Koka Indonesia",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "KONI",
+  "n": "Perdana Bangun Pusaka",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "KOPI",
+  "n": "Mitra Energi Persada",
+  "s": "Energi"
+ },
+ {
+  "c": "KOTA",
+  "n": "DMS Propertindo",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "KPIG",
+  "n": "MNC Tourism Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "KRAS",
+  "n": "Krakatau Steel (Persero)",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "KREN",
+  "n": "Quantum Clovera Investama",
+  "s": "Teknologi"
+ },
+ {
+  "c": "KRYA",
+  "n": "Bangun Karya Perkasa Jaya",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "KSIX",
+  "n": "Kentanix Supra International",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "KUAS",
+  "n": "Ace Oldfields",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "LABA",
+  "n": "Green Power Group",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "LABS",
+  "n": "UBC Medical Indonesia",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "LAJU",
+  "n": "Jasa Berdikari Logistics",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "LAND",
+  "n": "Trimitra Propertindo",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "LAPD",
+  "n": "Leyand International",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "LCGP",
+  "n": "Eureka Prima Jakarta",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "LCKM",
+  "n": "LCK Global Kedaton",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "LEAD",
+  "n": "Logindo Samudramakmur",
+  "s": "Energi"
+ },
+ {
+  "c": "LFLO",
+  "n": "Imago Mulia Persada",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "LIFE",
+  "n": "MSIG Life Insurance Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "LINK",
+  "n": "Link Net",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "LION",
+  "n": "Lion Metal Works",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "LIVE",
+  "n": "Homeco Victoria Makmur",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "LMAS",
+  "n": "Limas Indonesia Makmur",
+  "s": "Teknologi"
+ },
+ {
+  "c": "LMAX",
+  "n": "Lupromax Pelumas Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "LMPI",
+  "n": "Langgeng Makmur Industri",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "LMSH",
+  "n": "Lionmesh Prima",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "LOPI",
+  "n": "Logisticsplus International",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "LPCK",
+  "n": "Lippo Cikarang",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "LPGI",
+  "n": "Lippo General Insurance",
+  "s": "Keuangan"
+ },
+ {
+  "c": "LPIN",
+  "n": "Multi Prima Sejahtera",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "LPKR",
+  "n": "Lippo Karawaci",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "LPLI",
+  "n": "Star Pacific",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "LPPF",
+  "n": "MDS Retailing",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "LPPS",
+  "n": "Lenox Pasifik Investama",
+  "s": "Keuangan"
+ },
+ {
+  "c": "LRNA",
+  "n": "Eka Sari Lorena Transport",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "LSIP",
+  "n": "PP London Sumatra Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "LTLS",
+  "n": "Lautan Luas",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "LUCK",
+  "n": "Sentral Mitra Informatika",
+  "s": "Teknologi"
+ },
+ {
+  "c": "LUCY",
+  "n": "Lima Dua Lima Tiga",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MABA",
+  "n": "Marga Abhinaya Abadi",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MAGP",
+  "n": "Multi Agro Gemilang Plantation",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MAHA",
+  "n": "Mandiri Herindo Adiperkasa",
+  "s": "Energi"
+ },
+ {
+  "c": "MAIN",
+  "n": "Malindo Feedmill",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MANG",
+  "n": "Manggung Polahraya",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "MAPA",
+  "n": "Map Aktif Adiperkasa",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MAPB",
+  "n": "Map Boga Adiperkasa",
+  "s": "Barang Konsumen Non-Primer"
  },
  {
   "c": "MAPI",
   "n": "Mitra Adiperkasa",
-  "s": "Konsumsi Non-Primer"
+  "s": "Barang Konsumen Non-Primer"
  },
  {
-  "c": "AMRT",
-  "n": "Sumber Alfaria Trijaya",
-  "s": "Konsumsi Primer"
+  "c": "MARI",
+  "n": "Mahaka Radio Integra",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MARK",
+  "n": "Mark Dynamics Indonesia",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "MASB",
+  "n": "Bank Multiarta Sentosa",
+  "s": "Keuangan"
+ },
+ {
+  "c": "MAXI",
+  "n": "Maxindo Karya Anugerah",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MAYA",
+  "n": "Bank Mayapada Internasional",
+  "s": "Keuangan"
+ },
+ {
+  "c": "MBAP",
+  "n": "Mitrabara Adiperdana",
+  "s": "Energi"
+ },
+ {
+  "c": "MBMA",
+  "n": "Merdeka Battery Materials",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "MBSS",
+  "n": "Mitrabahtera Segara Sejati",
+  "s": "Energi"
+ },
+ {
+  "c": "MBTO",
+  "n": "Martina Berto",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MCAS",
+  "n": "M Cash Integrasi",
+  "s": "Teknologi"
+ },
+ {
+  "c": "MCOL",
+  "n": "Prima Andalan Mandiri",
+  "s": "Energi"
+ },
+ {
+  "c": "MCOR",
+  "n": "Bank China Construction Bank Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "MDIA",
+  "n": "Intermedia Capital",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MDIY",
+  "n": "Daya Intiguna Yasa",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MDKA",
+  "n": "Merdeka Copper Gold",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "MDKI",
+  "n": "Emdeki Utama",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "MDLA",
+  "n": "Medela Potentia",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "MDLN",
+  "n": "Modernland Realty",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "MDRN",
+  "n": "Modern Internasional",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "MEDC",
+  "n": "Medco Energi Internasional",
+  "s": "Energi"
+ },
+ {
+  "c": "MEDS",
+  "n": "Hetzer Medical Indonesia",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "MEGA",
+  "n": "Bank Mega",
+  "s": "Keuangan"
+ },
+ {
+  "c": "MEJA",
+  "n": "Harta Djaya Karya",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MENN",
+  "n": "Menn Teknologi Indonesia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "MERI",
+  "n": "Merry Riana Edukasi",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MERK",
+  "n": "Merck",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "META",
+  "n": "Nusantara Infrastructure",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "MFMI",
+  "n": "Multifiling Mitra Indonesia",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "MGLV",
+  "n": "NexAI Digital Infrastruktur",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MGNA",
+  "n": "Magna Investama Mandiri",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MGRO",
+  "n": "Mahkota Group",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MHKI",
+  "n": "Multi Hanna Kreasindo",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "MICE",
+  "n": "Multi Indocitra",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MIDI",
+  "n": "Midi Utama Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MIKA",
+  "n": "Mitra Keluarga Karyasehat",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "MINA",
+  "n": "Sanurhasta Mitra",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MINE",
+  "n": "Sinar Terang Mandiri",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "MIRA",
+  "n": "Mitra International Resources",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "MITI",
+  "n": "Mitra Investindo",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "MKAP",
+  "n": "Multikarya Asia Pasifik Raya",
+  "s": "Energi"
+ },
+ {
+  "c": "MKNT",
+  "n": "Mitra Komunikasi Nusantara",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MKPI",
+  "n": "Metropolitan Kentjana",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "MKTR",
+  "n": "Menthobi Karyatama Raya",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MLBI",
+  "n": "Multi Bintang Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MLIA",
+  "n": "Mulia Industrindo",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "MLPL",
+  "n": "Multipolar",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MLPT",
+  "n": "Multipolar Technology",
+  "s": "Teknologi"
+ },
+ {
+  "c": "MMIX",
+  "n": "Multi Medika Internasional",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "MMLP",
+  "n": "Mega Manunggal Property",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "MNCN",
+  "n": "Media Nusantara Citra",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MOLI",
+  "n": "Madusari Murni Indah",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "MORA",
+  "n": "Ekamas Mora Republik",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "MPIX",
+  "n": "Mitra Pedagang Indonesia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "MPMX",
+  "n": "Mitra Pinasthika Mustika",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MPOW",
+  "n": "Megapower Makmur",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "MPPA",
+  "n": "Matahari Putra Prima",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MPRO",
+  "n": "Maha Properti Indonesia",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "MPXL",
+  "n": "MPX Logistics International",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "MRAT",
+  "n": "Mustika Ratu",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MREI",
+  "n": "Maskapai Reasuransi Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "MSIE",
+  "n": "Multisarana Intan Eduka",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "MSIN",
+  "n": "MNC Digital Entertainment",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MSJA",
+  "n": "Multi Spunindo Jaya",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MSKY",
+  "n": "MNC Sky Vision",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "MSTI",
+  "n": "Mastersystem Infotama",
+  "s": "Teknologi"
+ },
+ {
+  "c": "MTDL",
+  "n": "Metrodata Electronics",
+  "s": "Teknologi"
+ },
+ {
+  "c": "MTEL",
+  "n": "Dayamitra Telekomunikasi",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "MTFN",
+  "n": "Capitalinc Investment",
+  "s": "Energi"
+ },
+ {
+  "c": "MTLA",
+  "n": "Metropolitan Land",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "MTMH",
+  "n": "Murni Sadar",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "MTPS",
+  "n": "Meta Epsi",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "MTRA",
+  "n": "Mitra Pemuda",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "MTSM",
+  "n": "Metro Realty",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "MTWI",
+  "n": "Malacca Trust Wuwungan Insurance",
+  "s": "Keuangan"
+ },
+ {
+  "c": "MUTU",
+  "n": "Mutuagung Lestari",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "MYOH",
+  "n": "Samindo Resources",
+  "s": "Energi"
+ },
+ {
+  "c": "MYOR",
+  "n": "Mayora Indah",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "MYTX",
+  "n": "Asia Pacific Investama",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "NAIK",
+  "n": "Adiwarna Anugerah Abadi",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "NANO",
+  "n": "Nanotech Indonesia Global",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "NASA",
+  "n": "Andalan Perkasa Abadi",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "NASI",
+  "n": "Wahana Inti Makmur",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "NATO",
+  "n": "Olympus Strategic Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "NAYZ",
+  "n": "Hassana Boga Sejahtera",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "NCKL",
+  "n": "Trimegah Bangun Persada",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "NELY",
+  "n": "Pelayaran Nelly Dwi Putri",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "NEST",
+  "n": "Esta Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "NETV",
+  "n": "MDTV Media Technologies",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "NFCX",
+  "n": "NFC Indonesia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "NICE",
+  "n": "Adhi Kartiko Pratama",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "NICK",
+  "n": "Charnic Capital",
+  "s": "Keuangan"
+ },
+ {
+  "c": "NICL",
+  "n": "PAM Mineral",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "NIKL",
+  "n": "Pelat Timah Nusantara",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "NINE",
+  "n": "Techno9 Indonesia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "NIRO",
+  "n": "City Retail Developments",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "NISP",
+  "n": "Bank OCBC NISP",
+  "s": "Keuangan"
+ },
+ {
+  "c": "NOBU",
+  "n": "Bank Nationalnobu",
+  "s": "Keuangan"
+ },
+ {
+  "c": "NPGF",
+  "n": "Nusa Palapa Gemilang",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "NRCA",
+  "n": "Nusa Raya Cipta",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "NSSS",
+  "n": "Nusantara Sawit Sejahtera",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "NTBK",
+  "n": "Nusatama Berkah",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "NUSA",
+  "n": "Sinergi Megah Internusa",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "NZIA",
+  "n": "Nusantara Almazia",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "OASA",
+  "n": "Maharaksa Biru Energi",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "OBAT",
+  "n": "Brigit Biofarmaka Teknologi",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "OBMD",
+  "n": "OBM Drilchem",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "OCAP",
+  "n": "ONIX CAPITAL",
+  "s": "Keuangan"
+ },
+ {
+  "c": "OILS",
+  "n": "Indo Oil Perkasa",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "OKAS",
+  "n": "Ancora Indonesia Resources",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "OLIV",
+  "n": "Atlas Nexus Group",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "OMED",
+  "n": "Jayamas Medica Industri",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "OMRE",
+  "n": "Indonesia Prima Property",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "OPMS",
+  "n": "Optima Prima Metal Sinergi",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "PACK",
+  "n": "Abadi Nusantara Hijau Investama",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "PADA",
+  "n": "Personel Alih Daya",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "PADI",
+  "n": "Minna Padi Investama Sekuritas",
+  "s": "Keuangan"
+ },
+ {
+  "c": "PALM",
+  "n": "Provident Investasi Bersama",
+  "s": "Keuangan"
+ },
+ {
+  "c": "PAMG",
+  "n": "Bima Sakti Pertiwi",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "PANI",
+  "n": "Pantai Indah Kapuk Dua",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "PANR",
+  "n": "Panorama Sentrawisata",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "PANS",
+  "n": "Panin Sekuritas",
+  "s": "Keuangan"
+ },
+ {
+  "c": "PART",
+  "n": "Cipta Perdana Lancar",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "PBID",
+  "n": "Panca Budi Idaman",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "PBRX",
+  "n": "Pan Brothers",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "PBSA",
+  "n": "Paramita Bangun Sarana",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "PCAR",
+  "n": "Prima Cakrawala Abadi",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "PDES",
+  "n": "Destinasi Tirta Nusantara",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "PDPP",
+  "n": "Primadaya Plastisindo",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "PEGE",
+  "n": "Panca Global Kapital",
+  "s": "Keuangan"
+ },
+ {
+  "c": "PEHA",
+  "n": "Phapros",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "PEVE",
+  "n": "Penta Valent",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "PGAS",
+  "n": "Perusahaan Gas Negara (Persero)",
+  "s": "Energi"
+ },
+ {
+  "c": "PGEO",
+  "n": "Pertamina Geothermal Energy",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "PGJO",
+  "n": "Bahtera Bumi Raya",
+  "s": "Teknologi"
+ },
+ {
+  "c": "PGLI",
+  "n": "Pembangunan Graha Lestari Indah",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "PGUN",
+  "n": "Pradiksi Gunatama",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "PICO",
+  "n": "Pelangi Indah Canindo",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "PIPA",
+  "n": "Oxala Energy International",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "PJAA",
+  "n": "Pembangunan Jaya Ancol",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "PJHB",
+  "n": "Pelayaran Jaya Hidup Baru",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "PKPK",
+  "n": "Paragon Karya Perkasa",
+  "s": "Energi"
+ },
+ {
+  "c": "PLAN",
+  "n": "Planet Properindo Jaya",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "PLAS",
+  "n": "Polaris Investama",
+  "s": "Keuangan"
+ },
+ {
+  "c": "PLIN",
+  "n": "Plaza Indonesia Realty",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "PMJS",
+  "n": "Putra Mandiri Jembar",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "PMMP",
+  "n": "Panca Mitra Multiperdana",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "PMUI",
+  "n": "Prima Multi Usaha Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "PNBN",
+  "n": "Bank Pan Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "PNBS",
+  "n": "Bank Panin Dubai Syariah",
+  "s": "Keuangan"
+ },
+ {
+  "c": "PNGO",
+  "n": "AEP Pinago Plantations",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "PNIN",
+  "n": "Paninvest",
+  "s": "Keuangan"
+ },
+ {
+  "c": "PNLF",
+  "n": "Panin Financial",
+  "s": "Keuangan"
+ },
+ {
+  "c": "PNSE",
+  "n": "Pudjiadi & Sons",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "POLA",
+  "n": "Pool Advista Finance",
+  "s": "Keuangan"
+ },
+ {
+  "c": "POLI",
+  "n": "Pollux Hotels Group",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "POLL",
+  "n": "Pollux Properties Indonesia",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "POLU",
+  "n": "Golden Flower",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "POLY",
+  "n": "Asia Pacific Fibers",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "POOL",
+  "n": "Pool Advista Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "PORT",
+  "n": "Nusantara Pelabuhan Handal",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "POSA",
+  "n": "Bliss Properti Indonesia",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "POWR",
+  "n": "Cikarang Listrindo",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "PPGL",
+  "n": "Prima Globalindo Logistik",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "PPRE",
+  "n": "PP Presisi",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "PPRI",
+  "n": "Paperocks Indonesia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "PPRO",
+  "n": "PP Properti",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "PRAY",
+  "n": "Famon Awal Bros Sedaya",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "PRDA",
+  "n": "Prodia Widyahusada",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "PRDL",
+  "n": "Prodia Diagnostic Line",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "PRIM",
+  "n": "Royal Prima",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "PSAB",
+  "n": "J RESOURCES ASIA PASIFIK",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "PSAT",
+  "n": "Pancaran Samudera Transport",
+  "s": "Energi"
+ },
+ {
+  "c": "PSDN",
+  "n": "Prasidha Aneka Niaga",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "PSGO",
+  "n": "Palma Serasih",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "PSKT",
+  "n": "Red Planet Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "PSSI",
+  "n": "IMC Pelita Logistik",
+  "s": "Energi"
+ },
+ {
+  "c": "PTBA",
+  "n": "Bukit Asam (Persero)",
+  "s": "Energi"
+ },
+ {
+  "c": "PTDU",
+  "n": "Djasa Ubersakti",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "PTIS",
+  "n": "Indo Straits",
+  "s": "Energi"
+ },
+ {
+  "c": "PTMP",
+  "n": "Mitra Pack",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "PTMR",
+  "n": "Master Print",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "PTPP",
+  "n": "PP (Persero)",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "PTPS",
+  "n": "Pulau Subur",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "PTPW",
+  "n": "Pratama Widya",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "PTRO",
+  "n": "Petrosea",
+  "s": "Energi"
+ },
+ {
+  "c": "PTSN",
+  "n": "Sat Nusapersada",
+  "s": "Teknologi"
+ },
+ {
+  "c": "PTSP",
+  "n": "Pioneerindo Gourmet International",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "PUDP",
+  "n": "Pudjiadi Prestige",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "PURA",
+  "n": "Putra Rajawali Kencana",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "PURE",
+  "n": "Trinitan Metals and Minerals",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "PURI",
+  "n": "Puri Global Sukses",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "PWON",
+  "n": "Pakuwon Jati",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "PYFA",
+  "n": "Pyridam Farma",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "PZZA",
+  "n": "Sarimelati Kencana",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "RAAM",
+  "n": "Tripar Multivision Plus",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "RAFI",
+  "n": "Sari Kreasi Boga",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "RAJA",
+  "n": "Rukun Raharja",
+  "s": "Energi"
+ },
+ {
+  "c": "RALS",
+  "n": "Ramayana Lestari Sentosa",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "RANC",
+  "n": "Supra Boga Lestari",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "RANS",
+  "n": "Rans Entertainmen Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "RATU",
+  "n": "Raharja Energi Cepu",
+  "s": "Energi"
+ },
+ {
+  "c": "RBMS",
+  "n": "Ristia Bintang Mahkotasejati",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "RCCC",
+  "n": "Utama Radar Cahaya",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "RDTX",
+  "n": "Roda Vivatex",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "REAL",
+  "n": "Repower Asia Indonesia",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "RELF",
+  "n": "Graha Mitra Asia Tbk.",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "RELI",
+  "n": "Reliance Sekuritas Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "RGAS",
+  "n": "Kian Santang Muliatama",
+  "s": "Energi"
+ },
+ {
+  "c": "RICY",
+  "n": "Ricky Putra Globalindo",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "RIGS",
+  "n": "Rig Tenders",
+  "s": "Energi"
+ },
+ {
+  "c": "RIMO",
+  "n": "Rimo International Lestari",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "RISE",
+  "n": "Jaya Sukses Makmur Sentosa",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "RLCO",
+  "n": "Abadi Lestari Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "RMKE",
+  "n": "RMK Energy",
+  "s": "Energi"
+ },
+ {
+  "c": "RMKO",
+  "n": "Royaltama Mulia Kontraktorindo",
+  "s": "Energi"
+ },
+ {
+  "c": "ROCK",
+  "n": "Rockfields Properti Indonesia",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "RODA",
+  "n": "Pikko Land Development",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "RONY",
+  "n": "Aracord Nusantara Group",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "ROTI",
+  "n": "Nippon Indosari Corpindo",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "RSCH",
+  "n": "Charlie Hospital Semarang",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "RSGK",
+  "n": "Kedoya Adyaraya",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "RUIS",
+  "n": "Radiant Utama Interinsco",
+  "s": "Energi"
+ },
+ {
+  "c": "RUNS",
+  "n": "Global Sukses Solusi",
+  "s": "Teknologi"
+ },
+ {
+  "c": "SAFE",
+  "n": "Steady Safe",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "SAGE",
+  "n": "Saptausaha Gemilangindah",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "SAME",
+  "n": "Sarana Meditama Metropolitan",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "SAMF",
+  "n": "Saraswanti Anugerah Makmur",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SAPX",
+  "n": "Satria Antaran Prima",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "SATU",
+  "n": "Kota Satu Properti",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "SBAT",
+  "n": "Sejahtera Bintang Abadi Textile",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SBMA",
+  "n": "Surya Biru Murni Acetylene",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SCCO",
+  "n": "Supreme Cable Manufacturing & Commerce",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "SCMA",
+  "n": "Surya Citra Media",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SCNP",
+  "n": "Selaras Citra Nusantara Perkasa",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SCPI",
+  "n": "Organon Pharma Indonesia",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "SDMU",
+  "n": "Sidomulyo Selaras",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "SDPC",
+  "n": "Millennium Pharmacon International",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "SDRA",
+  "n": "Bank Woori Saudara Indonesia 1906",
+  "s": "Keuangan"
+ },
+ {
+  "c": "SEMA",
+  "n": "Semacom Integrated",
+  "s": "Energi"
+ },
+ {
+  "c": "SFAN",
+  "n": "Surya Fajar Capital",
+  "s": "Keuangan"
+ },
+ {
+  "c": "SGER",
+  "n": "Sumber Global Energy",
+  "s": "Energi"
+ },
+ {
+  "c": "SGRO",
+  "n": "Prime Agri Resources",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "SHID",
+  "n": "Hotel Sahid Jaya",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SHIP",
+  "n": "Sillo Maritime Perdana",
+  "s": "Energi"
+ },
+ {
+  "c": "SICO",
+  "n": "Sigma Energy Compressindo",
+  "s": "Energi"
+ },
+ {
+  "c": "SIDO",
+  "n": "Industri Jamu Dan Farmasi Sido Muncul",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "SILO",
+  "n": "Siloam International Hospitals",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "SIMA",
+  "n": "Siwani Makmur",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SIMP",
+  "n": "Salim Ivomas Pratama",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "SINI",
+  "n": "Singaraja Putra",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "SIPD",
+  "n": "Sreeya Sewu Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "SKBM",
+  "n": "Sekar Bumi",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "SKLT",
+  "n": "Sekar Laut",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "SKRN",
+  "n": "Superkrane Mitra Utama",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "SKYB",
+  "n": "Northcliff Citranusa Indonesia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "SLIS",
+  "n": "Gaya Abadi Sempurna",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SMAR",
+  "n": "Sinar Mas Agro Resources and Technology",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "SMBR",
+  "n": "Semen Baturaja (Persero)",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SMCB",
+  "n": "Solusi Bangun Indonesia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SMDM",
+  "n": "Suryamas Dutamakmur",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "SMDR",
+  "n": "Samudera Indonesia",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "SMGA",
+  "n": "Sumber Mineral Global Abadi",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SMGR",
+  "n": "Semen Indonesia (Persero)",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SMIL",
+  "n": "Sarana Mitra Luas",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "SMKL",
+  "n": "Satyamitra Kemas Lestari",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SMKM",
+  "n": "Sumber Mas Konstruksi",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "SMLE",
+  "n": "Sinergi Multi Lestarindo",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SMMA",
+  "n": "Sinar Mas Multiartha",
+  "s": "Keuangan"
+ },
+ {
+  "c": "SMMT",
+  "n": "GOLDEN EAGLE ENERGY",
+  "s": "Energi"
+ },
+ {
+  "c": "SMRA",
+  "n": "Summarecon Agung",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "SMRU",
+  "n": "SMR Utama",
+  "s": "Energi"
+ },
+ {
+  "c": "SMSM",
+  "n": "Selamat Sempurna",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SNLK",
+  "n": "Sunter Lakeside Hotel",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SOCI",
+  "n": "Soechi Lines Tbk.",
+  "s": "Energi"
+ },
+ {
+  "c": "SOFA",
+  "n": "Solusi Environment Asia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SOHO",
+  "n": "Soho Global Health",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "SOLA",
+  "n": "Xolare RCR Energy",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SONA",
+  "n": "Sona Topas Tourism Industry",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SOSS",
+  "n": "ALSOK Indonesia Services",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "SOTS",
+  "n": "Satria Mega Kencana",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SOUL",
+  "n": "Mitra Tirta Buwana",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "SPMA",
+  "n": "Suparma",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SPRE",
+  "n": "Soraya Berjaya Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SPTO",
+  "n": "Surya Pertiwi",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "SQMI",
+  "n": "Wilton Makmur Indonesia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SRAJ",
+  "n": "Sejahteraraya Anugrahjaya",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "SRIL",
+  "n": "Sri Rejeki Isman",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "SRSN",
+  "n": "Indo Acidatama",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SRTG",
+  "n": "Saratoga Investama Sedaya",
+  "s": "Keuangan"
+ },
+ {
+  "c": "SSIA",
+  "n": "Surya Semesta Internusa",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "SSMS",
+  "n": "Sawit Sumbermas Sarana Tbk.",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "SSTM",
+  "n": "Sunson Textile Manufacturer",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "STAA",
+  "n": "Sumber Tani Agung Resources",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "STAR",
+  "n": "Buana Artha Anugerah",
+  "s": "Keuangan"
+ },
+ {
+  "c": "STRK",
+  "n": "Lovina Beach Brewery",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "STTP",
+  "n": "Siantar Top",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "SUGI",
+  "n": "Sugih Energy",
+  "s": "Energi"
+ },
+ {
+  "c": "SULI",
+  "n": "SLJ Global",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SUNI",
+  "n": "Sunindo Pratama",
+  "s": "Energi"
+ },
+ {
+  "c": "SUPA",
+  "n": "Super Bank Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "SUPR",
+  "n": "Solusi Tunas Pratama",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "SURE",
+  "n": "Super Energy",
+  "s": "Energi"
+ },
+ {
+  "c": "SURI",
+  "n": "Maja Agung Latexindo",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "SWAT",
+  "n": "Sriwahana Adityakarta",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "SWID",
+  "n": "Saraswanti Indoland Development",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "TALF",
+  "n": "Tunas Alfin",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "TAMA",
+  "n": "Lancartama Sejati",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "TAMU",
+  "n": "Pelayaran Tamarin Samudra",
+  "s": "Energi"
+ },
+ {
+  "c": "TAPG",
+  "n": "Triputra Agro Persada",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "TARA",
+  "n": "Agung Semesta Sejahtera",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "TAXI",
+  "n": "Express Transindo Utama",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "TAYS",
+  "n": "Jaya Swarasa Agung",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "TBIG",
+  "n": "Tower Bersama Infrastructure",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "TBLA",
+  "n": "Tunas Baru Lampung",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "TBMS",
+  "n": "Tembaga Mulia Semanan",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "TCID",
+  "n": "Mandom Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "TCPI",
+  "n": "Transcoal Pacific",
+  "s": "Energi"
+ },
+ {
+  "c": "TDPM",
+  "n": "Tianrong Chemicals Industry",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "TEBE",
+  "n": "Dana Brata Luhur",
+  "s": "Energi"
+ },
+ {
+  "c": "TECH",
+  "n": "Indosterling Technomedia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "TELE",
+  "n": "Omni Inovasi Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "TFAS",
+  "n": "Telefast Indonesia",
+  "s": "Teknologi"
+ },
+ {
+  "c": "TFCO",
+  "n": "Tifico Fiber Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "TGKA",
+  "n": "Tigaraksa Satria",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "TGRA",
+  "n": "Terregra Asia Energy",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "TGUK",
+  "n": "Platinum Wahab Nusantara",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "TIFA",
+  "n": "KDB Tifa Finance",
+  "s": "Keuangan"
+ },
+ {
+  "c": "TINS",
+  "n": "TIMAH (Persero)",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "TIRA",
+  "n": "Tira Austenite",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "TIRT",
+  "n": "Tirta Mahakam Resources",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "TKIM",
+  "n": "Pabrik Kertas Tjiwi Kimia",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "TLDN",
+  "n": "Teladan Prima Agro",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "TLKM",
+  "n": "Telkom Indonesia (Persero)",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "TMAS",
+  "n": "Temas",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "TMPO",
+  "n": "Tempo Inti Media",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "TNCA",
+  "n": "Trimuda Nuansa Citra",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "TOBA",
+  "n": "TBS Energi Utama",
+  "s": "Energi"
+ },
+ {
+  "c": "TOOL",
+  "n": "Rohartindo Nusantara Luas",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "TOPS",
+  "n": "Totalindo Eka Persada",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "TOSK",
+  "n": "Topindo Solusi Komunika",
+  "s": "Teknologi"
+ },
+ {
+  "c": "TOTL",
+  "n": "Total Bangun Persada",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "TOTO",
+  "n": "Surya Toto Indonesia",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "TOWR",
+  "n": "Sarana Menara Nusantara",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "TOYS",
+  "n": "Sunindo Adipersada",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "TPIA",
+  "n": "Chandra Asri Pacific",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "TPMA",
+  "n": "Trans Power Marine",
+  "s": "Energi"
+ },
+ {
+  "c": "TRAM",
+  "n": "Trada Alam Minera",
+  "s": "Energi"
+ },
+ {
+  "c": "TRGU",
+  "n": "Cerestar Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "TRIL",
+  "n": "Triwira Insanlestari",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "TRIM",
+  "n": "Trimegah Sekuritas Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "TRIN",
+  "n": "Perintis Triniti Properti",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "TRIO",
+  "n": "Trikomsel Oke",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "TRIS",
+  "n": "Trisula International",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "TRJA",
+  "n": "Transkon Jaya",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "TRON",
+  "n": "Teknologi Karya Digital Nusa",
+  "s": "Teknologi"
+ },
+ {
+  "c": "TRST",
+  "n": "Trias Sentosa",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "TRUE",
+  "n": "Triniti Dinamik",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "TRUK",
+  "n": "Guna Timur Raya",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "TRUS",
+  "n": "Trust Finance Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "TSPC",
+  "n": "Tempo Scan Pacific",
+  "s": "Kesehatan"
+ },
+ {
+  "c": "TUGU",
+  "n": "Asuransi Tugu Pratama Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "TYRE",
+  "n": "King Tire Indonesia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "UANG",
+  "n": "Pakuan",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "UCID",
+  "n": "Uni-Charm Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "UDNG",
+  "n": "Agro Bahari Nusantara",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "UFOE",
+  "n": "Damai Sejahtera Abadi",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ULTJ",
+  "n": "Ultrajaya Milk Industry & Trading Company",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "UNIC",
+  "n": "Unggul Indah Cahaya",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "UNIQ",
+  "n": "Ulima Nitra",
+  "s": "Energi"
+ },
+ {
+  "c": "UNIT",
+  "n": "Nusantara Inti Corpora",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "UNSP",
+  "n": "Bakrie Sumatera Plantations",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "UNTD",
+  "n": "Terang Dunia Internusa",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "UNTR",
+  "n": "United Tractors",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "UNVR",
+  "n": "Unilever Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "URBN",
+  "n": "Urban Jakarta Propertindo",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "UVCR",
+  "n": "Trimegah Karya Pratama",
+  "s": "Teknologi"
+ },
+ {
+  "c": "VAST",
+  "n": "Vastland Indonesia",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "VERN",
+  "n": "Verona Indah Pictures",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "VICI",
+  "n": "Victoria Care Indonesia",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "VICO",
+  "n": "Victoria Investama",
+  "s": "Keuangan"
+ },
+ {
+  "c": "VINS",
+  "n": "Victoria Insurance",
+  "s": "Keuangan"
+ },
+ {
+  "c": "VISI",
+  "n": "Satu Visi Putra",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "VIVA",
+  "n": "Visi Media Asia",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "VKTR",
+  "n": "VKTR Teknologi Mobilitas",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "VOKS",
+  "n": "Voksel Electric",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "VRNA",
+  "n": "Mizuho Leasing Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "VTNY",
+  "n": "Venteny Fortuna International",
+  "s": "Keuangan"
+ },
+ {
+  "c": "WAPO",
+  "n": "Wahana Pronatural",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "WBSA",
+  "n": "BSA Logistics Indonesia",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "WEGE",
+  "n": "Wijaya Karya Bangunan Gedung",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "WEHA",
+  "n": "WEHA Transportasi Indonesia",
+  "s": "Transportasi & Logistik"
+ },
+ {
+  "c": "WGSH",
+  "n": "Wira Global Solusi",
+  "s": "Teknologi"
+ },
+ {
+  "c": "WICO",
+  "n": "Wicaksana Overseas International",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "WIDI",
+  "n": "Widiant Jaya Krenindo",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "WIFI",
+  "n": "Solusi Sinergi Digital",
+  "s": "Teknologi"
+ },
+ {
+  "c": "WIIM",
+  "n": "Wismilak Inti Makmur",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "WIKA",
+  "n": "Wijaya Karya (Persero)",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "WINE",
+  "n": "Hatten Bali",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "WINR",
+  "n": "Winner Nusantara Jaya",
+  "s": "Properti & Real Estat"
+ },
+ {
+  "c": "WINS",
+  "n": "Wintermar Offshore Marine",
+  "s": "Energi"
+ },
+ {
+  "c": "WIRG",
+  "n": "WIR ASIA",
+  "s": "Teknologi"
+ },
+ {
+  "c": "WMPP",
+  "n": "Widodo Makmur Perkasa",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "WMUU",
+  "n": "Widodo Makmur Unggas",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "WOMF",
+  "n": "Wahana Ottomitra Multiartha",
+  "s": "Keuangan"
+ },
+ {
+  "c": "WOOD",
+  "n": "Integra Indocabinet",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "WOWS",
+  "n": "Ginting Jaya Energi",
+  "s": "Energi"
+ },
+ {
+  "c": "WSBP",
+  "n": "Waskita Beton Precast",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "WSKT",
+  "n": "Waskita Karya (Persero)",
+  "s": "Infrastruktur"
+ },
+ {
+  "c": "WTON",
+  "n": "Wijaya Karya Beton",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "YELO",
+  "n": "Yelooo Integra Datanet",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "YOII",
+  "n": "Asuransi Digital Bersama",
+  "s": "Keuangan"
+ },
+ {
+  "c": "YPAS",
+  "n": "Yanaprima Hastapersada",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "YULE",
+  "n": "Yulie Sekuritas Indonesia",
+  "s": "Keuangan"
+ },
+ {
+  "c": "YUPI",
+  "n": "Yupi Indo Jelly Gum",
+  "s": "Barang Konsumen Primer"
+ },
+ {
+  "c": "ZATA",
+  "n": "Bersama Zatta Jaya",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ZBRA",
+  "n": "Dosni Roha Indonesia",
+  "s": "Perindustrian"
+ },
+ {
+  "c": "ZINC",
+  "n": "Kapuas Prima Coal",
+  "s": "Barang Baku"
+ },
+ {
+  "c": "ZONE",
+  "n": "Mega Perintis",
+  "s": "Barang Konsumen Non-Primer"
+ },
+ {
+  "c": "ZYRX",
+  "n": "Zyrexindo Mandiri Buana",
+  "s": "Teknologi"
  }
 ]

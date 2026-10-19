@@ -3,12 +3,14 @@
 // Cara 1 (otomatis):   node scripts/import-idx.js
 // Cara 2 (manual):     buka URL di bawah di browser, simpan hasilnya sebagai idx.json, lalu
 //                      node scripts/import-idx.js idx.json
+import "dotenv/config";
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const IDX_URL =
+  process.env.IDX_COMPANY_URL ||
   "https://www.idx.co.id/primary/ListedCompany/GetCompanyProfiles?emitenType=s&start=0&length=9999";
 const out = path.join(here, "..", "data", "stocks.json");
 
@@ -50,9 +52,9 @@ try {
   console.error("\nGagal mengambil data dari BEI:", e.message);
   console.error(
     "Situs BEI sering memblokir permintaan dari server. Solusinya:\n" +
-      `  1. Buka ${IDX_URL} di browser\n` +
-      "  2. Simpan halaman sebagai idx.json\n" +
-      "  3. Jalankan: node scripts/import-idx.js idx.json\n"
+    `  1. Buka ${IDX_URL} di browser\n` +
+    "  2. Simpan halaman sebagai idx.json\n" +
+    "  3. Jalankan: node scripts/import-idx.js idx.json\n"
   );
   process.exit(1);
 }

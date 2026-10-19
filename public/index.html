@@ -627,6 +627,18 @@
       color: var(--mute)
     }
 
+    .msg .src {
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--mute);
+      white-space: normal
+    }
+
+    .msg .src a {
+      color: var(--accent);
+      text-decoration: underline
+    }
+
     .sug {
       display: flex;
       flex-wrap: wrap;
@@ -820,9 +832,9 @@
           <div class="tabs"><button id="t1" class="on">Terkait saham</button><button id="t2">Pasar global</button></div>
         </div>
         <div id="feed"></div>
-        <p class="note">Berita diambil dari RSS portal berita Indonesia (CNBC Indonesia, Kontan, Antara, detikFinance,
-          CNN Indonesia), dengan Google News sebagai cadangan. Ringkasan AI dibuat dari judul berita dan bukan
-          rekomendasi investasi.</p>
+        <p class="note">Diurutkan dari yang terbaru. Berita diambil dari RSS portal berita Indonesia (CNBC Indonesia,
+          Kontan, Antara, detikFinance, CNN Indonesia), dengan Google News sebagai cadangan. Ringkasan AI dibuat dari
+          judul berita dan bukan rekomendasi investasi.</p>
       </section>
       <footer>Konten hanya untuk informasi dan bukan rekomendasi untuk membeli atau menjual saham.</footer>
     </main>
@@ -968,7 +980,15 @@ AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
 
     let nt = 0;
     function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])) }
-    function newsCard(n) { const d = n.date ? new Date(n.date).toLocaleDateString("id-ID", { day: "numeric", month: "short", year: "numeric" }) : ""; return `<a class="news" href="${esc(n.link)}" target="_blank" rel="noopener"><h3>${esc(n.title)}</h3><span class="meta">${esc(n.source || "")}${n.source && d ? " · " : ""}${d}</span></a>` }
+    function ago(d) {
+      const t = Date.parse(d); if (!t) return "";
+      const m = Math.round((Date.now() - t) / 60000);
+      if (m < 1) return "baru saja"; if (m < 60) return m + " menit lalu";
+      const h = Math.round(m / 60); if (h < 24) return h + " jam lalu";
+      const dd = Math.round(h / 24); if (dd < 7) return dd + " hari lalu";
+      return new Date(t).toLocaleDateString("id-ID", { day: "numeric", month: "short", year: "numeric" });
+    }
+    function newsCard(n) { const a = ago(n.date), full = n.date ? new Date(n.date).toLocaleString("id-ID", { dateStyle: "medium", timeStyle: "short" }) : ""; return `<a class="news" href="${esc(n.link)}" target="_blank" rel="noopener"><h3>${esc(n.title)}</h3><span class="meta" title="${esc(full)}">${esc(n.source || "")}${n.source && a ? " · " : ""}${a}</span></a>` }
     const GLOBAL_Q = '(The Fed OR "harga batu bara" OR "harga nikel" OR "ekonomi China" OR "harga minyak") IHSG';
     async function renderNews() {
       $("t1").classList.toggle("on", tab === 1); $("t2").classList.toggle("on", tab === 2);
@@ -1012,7 +1032,7 @@ AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
     function toggleChat(open) { shell.classList.toggle("chat-open", open); $("cbtn").setAttribute("aria-expanded", open); if (open) $("ci").focus() }
     $("cbtn").onclick = () => toggleChat(!shell.classList.contains("chat-open"));
     $("cclose").onclick = () => toggleChat(false);
-    addMsg("bot", "Halo! Saya bisa membantu membahas saham Indonesia: istilah dan rasio keuangan, sektor, atau berita yang sedang Anda lihat. Saya tidak memberi saran beli atau jual.");
+    addMsg("bot", "Halo! Saya bisa membantu membahas saham Indonesia: istilah dan rasio keuangan, sektor, atau berita yang sedang Anda lihat. Saya tidak memberi saran beli atau jual, dan pertanyaan di luar topik saham tidak akan saya jawab.");
     async function send(text) {
       busy = true; hist.push({ role: "user", content: text }); addMsg("user", text);
       const w = addMsg("bot", "Sedang menjawab…"); w.classList.add("wait");
@@ -1020,7 +1040,8 @@ AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
         const r = await fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ messages: hist.slice(-12), context: { code: sel.c, name: sel.n, sector: sel.s, ...ctx } }) });
         const j = await r.json();
         if (!r.ok) throw new Error(j.error || "Gagal menghubungi asisten.");
-        w.classList.remove("wait"); w.textContent = j.reply; hist.push({ role: "assistant", content: j.reply });
+        w.classList.remove("wait"); w.textContent = j.reply; if (j.refused) hist.pop(); else hist.push({ role: "assistant", content: j.reply });
+        if (j.sources && j.sources.length) { const sd = document.createElement("div"); sd.className = "src"; sd.innerHTML = "Sumber: " + j.sources.map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>`).join(" · "); w.appendChild(sd) }
       } catch (e) { w.classList.remove("wait"); w.textContent = e.message || "Terjadi kesalahan."; hist.pop() }
       busy = false; clog.scrollTop = clog.scrollHeight;
     }

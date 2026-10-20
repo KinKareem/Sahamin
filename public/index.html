@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#fafbfc">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Sahamin – Saham dan berita pasar modal Indonesia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,6 +121,7 @@
       position: sticky;
       top: 0;
       height: calc(100vh - 64px);
+      height: calc(100dvh - 64px);
       display: flex;
       flex-direction: column;
       border-right: 1px solid var(--line)
@@ -221,9 +223,8 @@
     }
 
     .main {
-      padding: 28px 32px 56px;
-      min-width: 0;
-      max-width: 960px
+      padding: 28px clamp(16px, 3vw, 40px) 56px;
+      min-width: 0
     }
 
     .title {
@@ -301,7 +302,7 @@
     #chart {
       position: relative;
       width: 100%;
-      height: 340px;
+      height: clamp(260px, 46vh, 520px);
       touch-action: pan-y
     }
 
@@ -524,6 +525,38 @@
       color: var(--mute)
     }
 
+    .ai-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap
+    }
+
+    .ai-btn button {
+      border: 1px solid var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer
+    }
+
+    .ai-btn button:hover:not(:disabled) {
+      background: var(--bg)
+    }
+
+    .ai-btn button:disabled {
+      opacity: .6;
+      cursor: default
+    }
+
+    .ai-btn small {
+      color: var(--mute);
+      font-size: 12px
+    }
+
     #chart.load svg {
       opacity: .4
     }
@@ -555,6 +588,7 @@
       position: sticky;
       top: 0;
       height: calc(100vh - 64px);
+      height: calc(100dvh - 64px);
       flex-direction: column;
       border-left: 1px solid var(--line)
     }
@@ -734,47 +768,526 @@
       border-color: var(--blue)
     }
 
-    @media (max-width:860px) {
+    html {
+      -webkit-text-size-adjust: 100%
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent
+    }
+
+    .menu,
+    .side-x,
+    .scrim {
+      display: none
+    }
+
+    .side-h {
+      position: relative
+    }
+
+    .scrim {
+      position: fixed;
+      inset: 0;
+      background: rgba(18, 21, 28, .4);
+      z-index: 35;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s
+    }
+
+    .mnav {
+      display: flex;
+      gap: 4px;
+      margin-left: 8px
+    }
+
+    .mnav button {
+      border: 0;
+      background: none;
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--mute);
+      cursor: pointer
+    }
+
+    .mnav button:hover {
+      background: var(--surface);
+      color: var(--ink)
+    }
+
+    .mnav button.on {
+      background: var(--accent-soft);
+      color: var(--accent)
+    }
+
+    .code {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap
+    }
+
+    [data-m="sp"] .row {
+      grid-template-columns: 104px 1fr
+    }
+
+    [data-m="etf"] .row {
+      grid-template-columns: 92px 1fr
+    }
+
+    .article {
+      display: none;
+      max-width: 1100px;
+      font-size: 15.5px;
+      line-height: 1.75;
+      margin-top: 4px
+    }
+
+    .article p {
+      margin: 0 0 14px;
+      max-width: 760px
+    }
+
+    .article ul {
+      margin: 0 0 14px;
+      padding-left: 20px
+    }
+
+    .article li {
+      margin-bottom: 10px
+    }
+
+    body:is([data-m="bond"], [data-m="reksa"]) .article {
+      display: block
+    }
+
+    body:is([data-m="bond"], [data-m="reksa"]) :is(.ranges, #chart, #cnote, .stats, .price, .name) {
+      display: none
+    }
+
+    body:is([data-m="bond"], [data-m="reksa"]) .row {
+      grid-template-columns: 1fr
+    }
+
+    body:is([data-m="bond"], [data-m="reksa"]) .code {
+      white-space: normal;
+      font-size: 14px;
+      line-height: 1.35
+    }
+
+    .calc {
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      background: var(--bg)
+    }
+
+    .calc .cg {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px
+    }
+
+    .calc label {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--mute)
+    }
+
+    .calc input,
+    .calc select {
+      border: 1px solid var(--line);
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font: inherit;
+      font-size: 14px;
+      color: var(--ink);
+      outline: 0;
+      width: 100%
+    }
+
+    .calc input:focus,
+    .calc select:focus {
+      border-color: var(--accent)
+    }
+
+    .calc .cr {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line)
+    }
+
+    .calc .cr div span {
+      display: block;
+      font-size: 12px;
+      color: var(--mute)
+    }
+
+    .calc .cr div b {
+      font-size: 17px
+    }
+
+    .calc .cn {
+      font-size: 12px;
+      color: var(--mute);
+      margin: 14px 0 0;
+      line-height: 1.5
+    }
+
+    .tw {
+      overflow-x: auto;
+      margin: 0 0 16px
+    }
+
+    .tb {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 13.5px
+    }
+
+    .tb th {
+      text-align: left;
+      font-weight: 600;
+      color: var(--mute);
+      font-size: 12px;
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--line);
+      white-space: nowrap
+    }
+
+    .tb td {
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--line);
+      white-space: nowrap;
+      vertical-align: top
+    }
+
+    .tb td:first-child {
+      font-weight: 700
+    }
+
+    .tb .wr {
+      white-space: normal;
+      min-width: 200px;
+      max-width: 320px;
+      line-height: 1.5
+    }
+
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 0 0 18px
+    }
+
+    .tile {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px
+    }
+
+    .tile span {
+      display: block;
+      font-size: 12px;
+      color: var(--mute)
+    }
+
+    .tile b {
+      font-size: 20px
+    }
+
+    .tile small {
+      display: block;
+      font-size: 12px;
+      color: var(--mute)
+    }
+
+    .bd {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600
+    }
+
+    .bd-open {
+      background: rgba(15, 157, 88, .13);
+      color: var(--green)
+    }
+
+    .bd-soon {
+      background: rgba(245, 183, 0, .2);
+      color: #8a6500
+    }
+
+    .bd-done {
+      background: var(--surface);
+      color: var(--mute)
+    }
+
+    .cap {
+      font-weight: 600;
+      font-size: 14px;
+      margin: 20px 0 8px
+    }
+
+    .srcnote {
+      font-size: 12px;
+      color: var(--mute);
+      margin: 8px 0 18px;
+      line-height: 1.55
+    }
+
+    .srcnote a {
+      color: var(--accent);
+      text-decoration: underline
+    }
+
+    .lg {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--mute);
+      margin-top: 6px
+    }
+
+    .lg i {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      margin-right: 6px
+    }
+
+    .article svg {
+      width: 100%;
+      height: auto;
+      display: block
+    }
+
+    @media (max-width:480px) {
+      .tile b {
+        font-size: 17px
+      }
+
+      .tiles {
+        gap: 8px
+      }
+
+      .tile {
+        padding: 10px
+      }
+    }
+
+    @media (max-width:1180px) {
       .shell.chat-open {
-        grid-template-columns: 1fr
+        grid-template-columns: 300px minmax(0, 1fr)
+      }
+
+      .chat {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        width: min(380px, 92vw);
+        z-index: 20;
+        background: var(--bg);
+        box-shadow: -8px 0 30px rgba(18, 21, 28, .12)
+      }
+    }
+
+    @media (max-width:860px) {
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0 0 auto;
+        height: env(safe-area-inset-top, 0px);
+        background: var(--bg);
+        z-index: 16
+      }
+
+      .top {
+        position: sticky;
+        top: env(safe-area-inset-top, 0px);
+        z-index: 15;
+        background: var(--bg);
+        padding: 8px 12px;
+        gap: 10px;
+        height: auto;
+        min-height: 56px;
+        flex-wrap: wrap
+      }
+
+      .mnav {
+        order: 5;
+        width: 100%;
+        margin: 0;
+        overflow-x: auto;
+        scrollbar-width: none
+      }
+
+      .mnav::-webkit-scrollbar {
+        display: none
+      }
+
+      .mnav button {
+        flex: 1 0 auto;
+        white-space: nowrap;
+        padding: 9px 12px
+      }
+
+      .logo {
+        font-size: 18px
+      }
+
+      .menu {
+        display: grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: var(--bg);
+        cursor: pointer;
+        padding: 0
+      }
+
+      .cbtn {
+        padding: 8px 14px
+      }
+
+      .shell,
+      .shell.chat-open {
+        grid-template-columns: minmax(0, 1fr)
+      }
+
+      .side {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: auto;
+        width: min(88vw, 340px);
+        z-index: 40;
+        background: var(--bg);
+        box-shadow: 0 0 40px rgba(18, 21, 28, .2);
+        transform: translateX(-105%);
+        visibility: hidden;
+        transition: transform .25s ease, visibility .25s;
+        padding-top: env(safe-area-inset-top, 0px)
+      }
+
+      .shell.side-open .side {
+        transform: none;
+        visibility: visible
+      }
+
+      .scrim {
+        display: block
+      }
+
+      .shell.side-open .scrim {
+        opacity: 1;
+        pointer-events: auto
+      }
+
+      .side-x {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        border: 0;
+        background: var(--surface);
+        border-radius: 10px;
+        font-size: 20px;
+        line-height: 1;
+        cursor: pointer
+      }
+
+      .side-h {
+        padding: 18px 16px 12px
+      }
+
+      .side-h h2 {
+        padding-right: 44px
+      }
+
+      .az button {
+        width: 28px;
+        height: 28px
+      }
+
+      .row {
+        padding: 12px
       }
 
       .chat {
         position: fixed;
         inset: 0;
+        width: auto;
         height: auto;
-        z-index: 20;
-        background: var(--bg);
+        z-index: 50;
+        box-shadow: none;
         border-left: 0;
-        padding-top: env(safe-area-inset-top, 0px)
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px)
       }
 
-      .shell {
-        grid-template-columns: 1fr
-      }
-
-      .side {
-        position: static;
-        height: auto;
-        border-right: 0;
-        border-bottom: 1px solid var(--line)
-      }
-
-      .list {
-        max-height: 220px
+      body:has(.shell.chat-open),
+      body:has(.shell.side-open) {
+        overflow: hidden
       }
 
       .main {
-        padding: 20px 16px 40px
+        padding: 16px 16px 40px
       }
 
-      .top {
-        padding: 0 16px;
-        gap: 12px
+      .title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px
       }
 
-      .logo {
-        font-size: 18px
+      .title h1 {
+        font-size: 24px
+      }
+
+      .price {
+        text-align: left
+      }
+
+      .price b {
+        font-size: 24px
+      }
+
+      .ranges {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px
+      }
+
+      .ranges button {
+        padding: 10px 0;
+        background: var(--surface)
+      }
+
+      .ranges button.on {
+        background: var(--accent-soft)
       }
 
       #chart {
@@ -782,7 +1295,49 @@
       }
 
       .stats {
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px
+      }
+
+      .newsbox {
+        margin-top: 28px
+      }
+
+      .newsbox-h {
+        flex-direction: column;
+        align-items: stretch
+      }
+
+      .tabs button {
+        flex: 1;
+        padding: 10px
+      }
+
+      .news h3 {
+        font-size: 15px
+      }
+
+      .search input,
+      select,
+      .chat-f textarea,
+      .calc input,
+      .calc select {
+        font-size: 16px
+      }
+    }
+
+    @media (max-width:380px) {
+      .logo {
+        font-size: 16px
+      }
+
+      .cbtn {
+        padding: 8px 10px;
+        font-size: 13px
+      }
+
+      #chart {
+        height: 240px
       }
     }
   </style>
@@ -790,14 +1345,25 @@
 
 <body>
   <header class="top">
+    <button class="menu" id="menu" type="button" aria-label="Buka daftar saham" aria-expanded="false"
+      aria-controls="side"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round">
+        <path d="M2 4.5h14M2 9h14M2 13.5h14" />
+      </svg></button>
     <a class="logo" href="#">Saham<i>in</i></a>
+    <nav class="mnav" id="mnav" aria-label="Menu utama"><button type="button" data-m="idx" class="on">Saham
+        IDX</button><button type="button" data-m="sp">S&amp;P 500</button><button type="button"
+        data-m="bond">Obligasi</button><button type="button" data-m="reksa">Reksa dana</button><button type="button"
+        data-m="etf">ETF</button></nav>
     <button class="cbtn" id="cbtn" aria-expanded="false" aria-controls="chat">Tanya AI</button>
   </header>
 
   <div class="shell">
-    <nav class="side" aria-label="Daftar saham">
+    <div class="scrim" id="scrim"></div>
+    <nav class="side" id="side" aria-label="Daftar saham">
       <div class="side-h">
-        <h2>Daftar saham <span id="count"></span></h2>
+        <button class="side-x" id="sidex" type="button" aria-label="Tutup daftar saham">&times;</button>
+        <h2><b id="sidetitle">Daftar saham</b> <span id="count"></span></h2>
         <form class="search" id="sf" onsubmit="return false">
           <input id="q" type="search" placeholder="Cari kode atau nama saham" autocomplete="off"
             aria-label="Cari saham">
@@ -823,8 +1389,10 @@
       <div id="chart">
         <div class="tip" id="tip"></div>
       </div>
-      <p class="note">Sumber data: Yahoo Finance. Harga tertunda dan bukan real-time.</p>
+      <p class="note" id="cnote">Sumber data: Yahoo Finance. Harga tertunda dan bukan real-time.</p>
       <div class="stats" id="stats"></div>
+
+      <article class="article" id="article"></article>
 
       <section class="newsbox">
         <div class="newsbox-h">
@@ -897,7 +1465,7 @@ SMRA|Summarecon Agung|Properti
 ACES|Aspirasi Hidup Indonesia|Konsumsi Non-Primer
 MAPI|Mitra Adiperkasa|Konsumsi Non-Primer
 AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
-    const S = (window.STOCKS && window.STOCKS.length) ? window.STOCKS : RAW.split("\n").map(l => { const [c, n, s] = l.split("|"); return { c, n, s } });
+    let S = (window.STOCKS && window.STOCKS.length) ? window.STOCKS : RAW.split("\n").map(l => { const [c, n, s] = l.split("|"); return { c, n, s } });
     const GLOBAL = [
       ["Keputusan suku bunga The Fed dan dampaknya ke rupiah", "Arah bunga acuan AS memengaruhi arus dana asing di bursa Indonesia.", "The Fed rupiah IHSG"],
       ["Harga batu bara dunia bergerak, saham energi disorot", "Permintaan dari China dan India menjadi penentu harga komoditas.", "harga batu bara saham energi"],
@@ -907,35 +1475,46 @@ AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
     const gn = q => "https://news.google.com/search?hl=id&gl=ID&ceid=ID:id&q=" + encodeURIComponent(q);
     const $ = id => document.getElementById(id);
     const fmt = n => n.toLocaleString("id-ID", { maximumFractionDigits: 0 });
-    let sector = "Semua", query = "", sel = S[0], days = 250, tab = 1;
+    const fmtN = (n, d = 0) => n.toLocaleString(market === "sp" ? "en-US" : "id-ID", { minimumFractionDigits: d, maximumFractionDigits: d });
+    const money = n => market === "sp" ? (sel.s === "Indeks" ? "" : "US$ ") + fmtN(n, 2) : "Rp " + fmtN(n);
+    let sector = "Semua", query = "", sel = S[0], days = 250, tab = 1, market = "idx";
+    const IDX = S, SPX = (window.SP500 && window.SP500.length) ? window.SP500 : [];
+    const BND = (window.BONDS || []).map(x => ({ ...x, d: x.n }));
+    const RKD = (window.REKSA || []).map(x => ({ ...x, d: x.n }));
+    const ETFL = window.ETFS || [];
+    const LEARN = () => market === "bond" || market === "reksa";
+    const MARKETS = { idx: { list: IDX, unit: "emiten", ph: "Cari kode atau nama saham", title: "Daftar saham" }, sp: { list: SPX, unit: "saham & indeks", ph: "Cari simbol atau nama", title: "S&P 500" }, bond: { list: BND, unit: "topik", ph: "Cari topik obligasi", title: "Obligasi" }, reksa: { list: RKD, unit: "topik", ph: "Cari topik reksa dana", title: "Reksa dana" }, etf: { list: ETFL, unit: "ETF", ph: "Cari kode atau nama ETF", title: "ETF" } };
 
     /* data simulasi, deterministik per kode saham */
     function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296 } }
     function hash(s) { let h = 7; for (const ch of s) h = Math.imul(h, 31) + ch.charCodeAt(0) | 0; return Math.abs(h) }
     const cache = {};
     async function series(c) {
-      if (cache[c]) return cache[c];
-      const r = await fetch("/api/chart/" + c);
+      const k = market + ":" + c;
+      if (cache[k]) return cache[k];
+      const r = await fetch("/api/chart/" + encodeURIComponent(c) + "?m=" + market);
       if (!r.ok) throw new Error("Gagal memuat data");
       const j = await r.json();
-      return cache[c] = j.points.map(x => ({ d: new Date(x.t), p: x.p }));
+      return cache[k] = j.points.map(x => ({ d: new Date(x.t), p: x.p }));
     }
 
     function hl(c, q) { if (!q) return c; const i = c.toLowerCase().indexOf(q); return i < 0 ? c : c.slice(0, i) + "<mark>" + c.slice(i, i + q.length) + "</mark>" + c.slice(i + q.length) }
     function renderSide() {
       const q = query.trim().toLowerCase();
-      const f = S.filter(x => (sector === "Semua" || x.s === sector) && (!q || x.c.toLowerCase().includes(q) || x.n.toLowerCase().includes(q)));
+      const f = S.filter(x => (sector === "Semua" || x.s === sector) && (!q || x.c.toLowerCase().includes(q) || x.n.toLowerCase().includes(q) || (x.d || "").toLowerCase().includes(q)));
       if (q) f.sort((a, b) => (+b.c.toLowerCase().includes(q)) - (+a.c.toLowerCase().includes(q)));
-      $("count").textContent = f.length + " emiten";
-      const g = {}; f.forEach(x => (g[x.c[0]] = g[x.c[0]] || []).push(x));
-      const ks = Object.keys(g).sort();
-      $("az").innerHTML = ks.map(k => `<button data-k="${k}" aria-label="Loncat ke ${k}">${k}</button>`).join("");
-      $("list").innerHTML = ks.length ? ks.map(k => `<div class="grp" id="g-${k}"><span>${k}</span><span>${g[k].length}</span></div>` + g[k].map(x => `<button class="row ${x.c === sel.c ? "on" : ""}" data-c="${x.c}"><span class="code">${hl(x.c, q)}</span><span class="name">${x.n}</span></button>`).join("")).join("") : `<div class="empty">Tidak ada saham yang cocok. Tekan Enter untuk mencarinya di Google News.</div>`;
+      $("count").textContent = f.length + " " + MARKETS[market].unit;
+      const gk = x => LEARN() || market === "etf" ? x.s : x.s === "Indeks" && market === "sp" ? "Indeks" : x.c[0];
+      const g = {}; f.forEach(x => (g[gk(x)] = g[gk(x)] || []).push(x));
+      const ks = LEARN() || market === "etf" ? Object.keys(g) : Object.keys(g).sort((a, b) => a === "Indeks" ? -1 : b === "Indeks" ? 1 : a.localeCompare(b));
+      $("az").innerHTML = ks.filter(k => k.length === 1).map(k => `<button data-k="${k}" aria-label="Loncat ke ${k}">${k}</button>`).join("");
+      $("list").innerHTML = ks.length ? ks.map(k => `<div class="grp" id="g-${k}"><span>${k}</span><span>${g[k].length}</span></div>` + g[k].map(x => `<button class="row ${x.c === sel.c ? "on" : ""}" data-c="${x.c}"><span class="code">${hl(x.d || x.c, q)}</span><span class="name">${x.n}</span></button>`).join("")).join("") : `<div class="empty">Tidak ada saham yang cocok. Tekan Enter untuk mencarinya di Google News.</div>`;
     }
 
     async function renderChart() {
+      if (LEARN()) { renderArticle(); return }
       const box = $("chart"), cur = sel.c; let all;
-      $("hc").textContent = sel.c; $("hn").textContent = sel.n + " · " + sel.s;
+      $("hc").textContent = sel.d || sel.c; $("hn").textContent = sel.n + " · " + sel.s;
       box.classList.add("load");
       try { all = await series(cur) } catch (e) {
         if (cur !== sel.c) return;
@@ -945,15 +1524,17 @@ AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
       if (cur !== sel.c) return;
       box.classList.remove("load");
       const data = all.slice(-days);
+      if (!data.length) { box.querySelector("svg")?.remove(); $("pv").textContent = "–"; $("pc").className = ""; $("pc").textContent = "Data harga belum tersedia"; $("stats").innerHTML = ""; return }
       const W = box.clientWidth || 700, H = box.clientHeight || 320, pl = 8, pr = 56, pt = 12, pb = 26;
       const ps = data.map(x => x.p), lo = Math.min(...ps), hi = Math.max(...ps), pad = (hi - lo) * .1 || 1;
       const mn = lo - pad, mx = hi + pad;
+      const axis = v => market === "sp" ? fmtN(v, hi < 1000 ? 2 : 0) : fmt(v);
       const X = i => pl + i * (W - pl - pr) / (data.length - 1), Y = p => pt + (mx - p) * (H - pt - pb) / (mx - mn);
       const up = data[data.length - 1].p >= data[0].p, col = up ? "var(--up)" : "var(--down)";
       const line = data.map((x, i) => (i ? "L" : "M") + X(i).toFixed(1) + "," + Y(x.p).toFixed(1)).join("");
       const area = line + `L${X(data.length - 1)},${H - pb}L${X(0)},${H - pb}Z`;
       let g = "";
-      for (let k = 0; k < 5; k++) { const v = mn + (mx - mn) * k / 4, y = Y(v); g += `<line x1="${pl}" x2="${W - pr}" y1="${y}" y2="${y}" stroke="var(--line)"/><text x="${W - pr + 8}" y="${y + 4}" font-size="11" fill="var(--mute)">${fmt(v)}</text>` }
+      for (let k = 0; k < 5; k++) { const v = mn + (mx - mn) * k / 4, y = Y(v); g += `<line x1="${pl}" x2="${W - pr}" y1="${y}" y2="${y}" stroke="var(--line)"/><text x="${W - pr + 8}" y="${y + 4}" font-size="11" fill="var(--mute)">${axis(v)}</text>` }
       const ticks = 4;
       for (let k = 0; k <= ticks; k++) { const i = Math.round(k * (data.length - 1) / ticks), d = data[i].d; g += `<text x="${X(i)}" y="${H - 6}" font-size="11" fill="var(--mute)" text-anchor="${k == 0 ? "start" : k == ticks ? "end" : "middle"}">${d.toLocaleDateString("id-ID", { day: "numeric", month: "short" })}</text>` }
       box.querySelector("svg")?.remove();
@@ -965,20 +1546,25 @@ AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
         const px = X(i), py = Y(data[i].p);
         hv.style.display = "block"; hl.setAttribute("x1", px); hl.setAttribute("x2", px); hd.setAttribute("cx", px); hd.setAttribute("cy", py);
         tip.style.display = "block"; tip.style.left = Math.max(50, Math.min(r.width - 50, px * r.width / W)) + "px";
-        tip.textContent = `Rp ${fmt(data[i].p)} · ${data[i].d.toLocaleDateString("id-ID", { day: "numeric", month: "short", year: "numeric" })}`;
+        tip.textContent = `${money(data[i].p)} · ${data[i].d.toLocaleDateString("id-ID", { day: "numeric", month: "short", year: "numeric" })}`;
       };
       box.onpointerleave = () => { hv.style.display = "none"; tip.style.display = "none" };
       /* header + statistik */
       const last = data[data.length - 1].p, first = data[0].p, ch = last - first, pc = ch / first * 100;
-      ctx.harga = { terakhir: last, awalPeriode: first, tertinggi: hi, terendah: lo, hariBursa: data.length };
-      $("hc").textContent = sel.c; $("hn").textContent = sel.n + " · " + sel.s;
-      $("pv").textContent = "Rp " + fmt(last);
+      ctx.harga = { terakhir: last, awalPeriode: first, tertinggi: hi, terendah: lo, hariBursa: data.length, mataUang: market === "sp" ? "USD (indeks dalam poin)" : "IDR" };
+      $("hc").textContent = sel.d || sel.c; $("hn").textContent = sel.n + " · " + sel.s;
+      $("pv").textContent = money(last);
       $("pc").className = up ? "up" : "down";
-      $("pc").textContent = (up ? "+" : "") + fmt(ch) + " (" + (up ? "+" : "") + pc.toFixed(2) + "%) dalam periode ini";
-      $("stats").innerHTML = [["Tertinggi", "Rp " + fmt(hi)], ["Terendah", "Rp " + fmt(lo)], ["Awal periode", "Rp " + fmt(first)], ["Akhir periode", "Rp " + fmt(last)]].map(a => `<div><span>${a[0]}</span><b>${a[1]}</b></div>`).join("");
+      $("pc").textContent = (up ? "+" : "") + fmtN(ch, market === "sp" ? 2 : 0) + " (" + (up ? "+" : "") + pc.toFixed(2) + "%) dalam periode ini";
+      $("stats").innerHTML = [["Tertinggi", money(hi)], ["Terendah", money(lo)], ["Awal periode", money(first)], ["Akhir periode", money(last)]].map(a => `<div><span>${a[0]}</span><b>${a[1]}</b></div>`).join("");
     }
 
-    let nt = 0;
+    let nt = 0, newsBase = "";
+    function aiBlock(j) {
+      if (j.summary) return `<div class="ai"><b>Ringkasan AI</b><p>${esc(j.summary)}</p></div>`;
+      if (j.aiReady && j.items.length) return `<div class="ai ai-btn"><button id="aibtn" type="button">Ringkas dengan AI</button><small>Dibuat dari judul berita di bawah.</small></div>`;
+      return "";
+    }
     function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])) }
     function ago(d) {
       const t = Date.parse(d); if (!t) return "";
@@ -993,25 +1579,31 @@ AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
     async function renderNews() {
       $("t1").classList.toggle("on", tab === 1); $("t2").classList.toggle("on", tab === 2);
       const id = ++nt; let q;
-      if (tab === 1) { $("nt").textContent = "Berita " + sel.c; q = sel.c + " " + sel.n + " saham" }
+      if (tab === 1 && market === "bond") { $("nt").textContent = "Berita obligasi"; q = "obligasi SBN sukuk" }
+      else if (tab === 1 && market === "reksa") { $("nt").textContent = "Berita reksa dana"; q = "reksa dana" }
+      else if (tab === 1) { $("nt").textContent = "Berita " + (sel.d || sel.c); q = (sel.d || sel.c) + " " + sel.n + (market === "sp" ? " Wall Street" : market === "etf" ? " ETF" : " saham") }
       else { $("nt").textContent = "Berita pasar global"; q = GLOBAL_Q }
       $("feed").innerHTML = '<div class="empty">Memuat berita…</div>';
       try {
-        const r = await fetch(tab === 1 ? "/api/news?code=" + encodeURIComponent(sel.c) + "&ai=1" : "/api/news?scope=global&ai=1");
+        newsBase = tab === 1 ? (market === "bond" ? "/api/news?scope=obligasi" : market === "reksa" ? "/api/news?scope=reksadana" : "/api/news?" + (market === "sp" || market === "etf" ? "m=" + market + "&" : "") + "code=" + encodeURIComponent(sel.c)) : "/api/news?scope=global";
+        const r = await fetch(newsBase);
         if (!r.ok) throw new Error();
         const j = await r.json(); if (id !== nt) return;
         ctx.beritaTopik = tab === 1 ? sel.c : "pasar global"; ctx.berita = j.items.slice(0, 8).map(i => i.title + " (" + i.source + ")");
-        $("feed").innerHTML = (j.summary ? `<div class="ai"><b>Ringkasan AI</b><p>${esc(j.summary)}</p></div>` : "") +
+        $("feed").innerHTML = aiBlock(j) +
           (j.items.length ? j.items.map(newsCard).join("") : '<div class="empty">Belum ada berita dalam 7 hari terakhir.</div>') +
           `<a class="gs" href="${gn(q)}" target="_blank" rel="noopener"><div><b>Lihat semua di Google News</b></div><em>Buka</em></a>`;
       } catch (e) { if (id === nt) $("feed").innerHTML = '<div class="empty">Berita gagal dimuat. Pastikan server berjalan dan terhubung ke internet.</div>' }
     }
     function select(c) { sel = S.find(x => x.c === c); renderSide(); renderChart(); renderNews(); }
 
-    const sectors = ["Semua", ...new Set(S.map(x => x.s))];
-    const SC = {}; sectors.forEach((s, i) => SC[s] = ["var(--blue)", "var(--red)", "var(--yellow)", "var(--green)"][i % 4]);
+    function buildSectors() {
+      const sectors = ["Semua", ...new Set(S.map(x => x.s))];
+      $("sec").innerHTML = sectors.map(s => `<option value="${s}">${s === "Semua" ? (LEARN() ? "Semua kategori" : "Semua sektor") : s}</option>`).join("");
+      $("sec").value = "Semua";
+    }
+    buildSectors();
     $("az").addEventListener("click", e => { const b = e.target.closest("[data-k]"); if (!b) return; const el = $("g-" + b.dataset.k); if (el) $("list").scrollTop = el.offsetTop - 4 });
-    $("sec").innerHTML = sectors.map(s => `<option value="${s}">${s === "Semua" ? "Semua sektor" : s}</option>`).join("");
     $("sec").onchange = e => { sector = e.target.value; renderSide() };
     $("q").addEventListener("input", e => { query = e.target.value; renderSide() });
     $("sf").addEventListener("submit", () => {
@@ -1025,6 +1617,189 @@ AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
     let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(renderChart, 100) });
     renderSide(); renderChart(); renderNews();
 
+    /* Menu Obligasi: materi dan kalkulator */
+    const inl = t => esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+    function md(t) { return t.split(/\n\n+/).map(b => { const L = b.split("\n"); return L.every(l => l.startsWith("- ")) ? "<ul>" + L.map(l => "<li>" + inl(l.slice(2)) + "</li>").join("") + "</ul>" : "<p>" + inl(b.replace(/\n/g, " ")) + "</p>" }).join("") }
+    const rupiah = n => "Rp " + Math.round(n).toLocaleString("id-ID");
+    const numv = id => parseFloat($(id).value) || 0;
+    const KUPON_HTML = `<div class="calc"><div class="cg">
+<label>Nominal pembelian (Rp)<input id="k-nom" type="number" value="10000000" min="0" step="1000000" inputmode="numeric"></label>
+<label>Kupon (% per tahun)<input id="k-kup" type="number" value="6.5" min="0" step="0.05" inputmode="decimal"></label>
+<label>Tenor (tahun)<input id="k-ten" type="number" value="3" min="1" step="1" inputmode="numeric"></label>
+<label>Pajak final kupon (%)<input id="k-pjk" type="number" value="10" min="0" step="1" inputmode="decimal"></label>
+<label>Pembayaran kupon<select id="k-frq"><option value="12" selected>Bulanan</option><option value="4">Tiap 3 bulan</option><option value="2">Tiap 6 bulan</option><option value="1">Tahunan</option></select></label>
+</div><div class="cr" id="k-res"></div>
+<p class="cn">Perhitungan sederhana: kupon dianggap tetap dan dibayar penuh sampai jatuh tempo. Tarif pajak dapat berubah dan berbeda antar produk, jadi sesuaikan dengan ketentuan seri yang Anda beli. Hasilnya hanya perkiraan, bukan jaminan.</p></div>`;
+    const YIELD_HTML = `<div class="calc"><div class="cg">
+<label>Harga beli (% dari nominal)<input id="y-har" type="number" value="98.5" min="0" step="0.05" inputmode="decimal"></label>
+<label>Kupon (% per tahun)<input id="y-kup" type="number" value="6.5" min="0" step="0.05" inputmode="decimal"></label>
+<label>Sisa tenor (tahun)<input id="y-ten" type="number" value="3" min="0.25" step="0.25" inputmode="decimal"></label>
+<label>Pembayaran kupon<select id="y-frq"><option value="2" selected>Tiap 6 bulan</option><option value="4">Tiap 3 bulan</option><option value="12">Bulanan</option><option value="1">Tahunan</option></select></label>
+</div><div class="cr" id="y-res"></div>
+<p class="cn">Hasil sebelum pajak dan biaya, dan belum memperhitungkan bunga berjalan (accrued interest) yang berlaku di pasar sekunder. Hanya perkiraan untuk belajar, bukan jaminan.</p></div>`;
+    function calcKupon() {
+      const nom = numv("k-nom"), kup = numv("k-kup"), ten = numv("k-ten"), pjk = numv("k-pjk"), f = +$("k-frq").value;
+      const gP = nom * kup / 100 / f, tax = gP * pjk / 100, nP = gP - tax, total = nP * f * ten;
+      $("k-res").innerHTML = [["Kupon bruto per periode", rupiah(gP)], ["Pajak per periode", rupiah(tax)], ["Kupon bersih per periode", rupiah(nP)], ["Total kupon bersih selama tenor", rupiah(total)], ["Imbal hasil bersih per tahun", (kup * (1 - pjk / 100)).toFixed(2) + "%"], ["Pokok + kupon bersih", rupiah(nom + total)]].map(a => `<div><span>${a[0]}</span><b>${a[1]}</b></div>`).join("");
+    }
+    function calcYield() {
+      const pr = numv("y-har"), kup = numv("y-kup"), ten = numv("y-ten"), f = +$("y-frq").value;
+      if (!(pr > 0) || !(ten > 0)) { $("y-res").innerHTML = "<div><span>Isi harga dan sisa tenor</span><b>–</b></div>"; return }
+      const n = Math.max(1, Math.round(ten * f)), c = kup / f;
+      const price = y => { let t = 0; for (let k = 1; k <= n; k++)t += c / Math.pow(1 + y / f, k); return t + 100 / Math.pow(1 + y / f, n) };
+      let lo = -0.9, hi = 1.5; for (let i = 0; i < 80; i++) { const m = (lo + hi) / 2; if (price(m) > pr) lo = m; else hi = m }
+      const st = pr < 99.995 ? "Di bawah nominal (diskon)" : pr > 100.005 ? "Di atas nominal (premi)" : "Sama dengan nominal";
+      $("y-res").innerHTML = [["Yield to maturity (perkiraan)", ((lo + hi) / 2 * 100).toFixed(2) + "% per tahun"], ["Current yield (kupon ÷ harga)", (kup / pr * 100).toFixed(2) + "%"], ["Posisi harga", st]].map(a => `<div><span>${a[0]}</span><b>${a[1]}</b></div>`).join("");
+    }
+    const SERI = window.SERI || { ritel: [], fr: [] };
+    const todayISO = () => new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Jakarta" });
+    const fdate = iso => new Date(iso + "T00:00:00").toLocaleDateString("id-ID", { day: "numeric", month: "short", year: "numeric" });
+    const nf = (n, d = 2) => n == null ? "–" : Number(n).toLocaleString("id-ID", { minimumFractionDigits: d, maximumFractionDigits: d });
+    const bps = (y, yp) => { const c = Math.round((y - yp) * 100); return (c > 0 ? "+" : "") + c + " bps" };
+    const tbl = (head, rows) => `<div class="tw"><table class="tb"><thead><tr>${head.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    function chartSvg(series, xticks, yfmt, floor) {
+      const W = 720, H = 300, pl = 10, pr = 52, pt = 12, pb = 28;
+      const xs = series.flatMap(s => s.pts.map(p => p[0])), ys = series.flatMap(s => s.pts.map(p => p[1]));
+      const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys), pad = (y1 - y0) * .12 || .05;
+      const lo = floor != null ? floor : y0 - pad, hi = y1 + pad;
+      const X = v => pl + (x1 === x0 ? .5 : (v - x0) / (x1 - x0)) * (W - pl - pr), Y = v => pt + (hi - v) / (hi - lo) * (H - pt - pb);
+      let g = "";
+      for (let k = 0; k < 5; k++) { const v = lo + (hi - lo) * k / 4, y = Y(v); g += `<line x1="${pl}" x2="${W - pr}" y1="${y}" y2="${y}" stroke="var(--line)"/><text x="${W - pr + 6}" y="${y + 4}" font-size="11" fill="var(--mute)">${yfmt(v)}</text>` }
+      xticks.forEach(t => { g += `<text x="${X(t[0])}" y="${H - 8}" font-size="11" fill="var(--mute)" text-anchor="middle">${t[1]}</text>` });
+      const paths = series.map(s => {
+        const d = s.pts.map((p, i) => (i ? "L" : "M") + X(p[0]).toFixed(1) + "," + Y(p[1]).toFixed(1)).join("");
+        const dots = s.pts.length <= 12 ? s.pts.map(p => `<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="3" fill="${s.color}"/>`).join("") : "";
+        return `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2" ${s.dash ? 'stroke-dasharray="5 4"' : ""} stroke-linejoin="round"/>${dots}`
+      }).join("");
+      return `<svg viewBox="0 0 ${W} ${H}" role="img">${g}${paths}</svg><div class="lg">${series.map(s => `<span><i style="background:${s.color}"></i>${s.name}</span>`).join("")}</div>`;
+    }
+    let obCache = null;
+    async function loadOb() {
+      if (obCache && Date.now() - obCache.t < 10 * 60 * 1000) return obCache.d;
+      try { const r = await fetch("/api/obligasi"); const d = await r.json(); if (!r.ok) return { error: d.error || "gagal memuat", history: d.history || [], url: d.url }; obCache = { t: Date.now(), d }; return d }
+      catch (e) { return { error: "server tidak terjangkau", history: [] } }
+    }
+    const JENISRD = window.JENISRD || [];
+    const DCA_HTML = `<div class="calc"><div class="cg">
+<label>Modal awal (Rp)<input id="d-awl" type="number" value="1000000" min="0" step="100000" inputmode="numeric"></label>
+<label>Setoran per bulan (Rp)<input id="d-bln" type="number" value="500000" min="0" step="100000" inputmode="numeric"></label>
+<label>Asumsi imbal hasil per tahun (%)<input id="d-ret" type="number" value="6" step="0.5" inputmode="decimal"></label>
+<label>Lama investasi (tahun)<input id="d-thn" type="number" value="10" min="1" max="40" step="1" inputmode="numeric"></label>
+</div><div class="cr" id="d-res"></div><div id="d-grf"></div>
+<p class="cn">Asumsi: imbal hasil tetap setiap tahun, setoran dilakukan di akhir bulan, dan biaya sudah termasuk dalam imbal hasil bersih yang Anda masukkan. Kenyataannya imbal hasil berfluktuasi dan bisa negatif, jadi hasil ini bukan prediksi atau jaminan.</p></div>`;
+    const UNIT_HTML = `<div class="calc"><div class="cg">
+<label>Nominal pembelian (Rp)<input id="u-nom" type="number" value="10000000" min="0" step="1000000" inputmode="numeric"></label>
+<label>Biaya pembelian (%)<input id="u-fb" type="number" value="0" min="0" step="0.1" inputmode="decimal"></label>
+<label>NAB per unit saat beli (Rp)<input id="u-nb" type="number" value="1500" min="0" step="1" inputmode="decimal"></label>
+<label>NAB per unit saat ini (Rp)<input id="u-ns" type="number" value="1650" min="0" step="1" inputmode="decimal"></label>
+<label>Biaya penjualan (%)<input id="u-fj" type="number" value="0" min="0" step="0.1" inputmode="decimal"></label>
+</div><div class="cr" id="u-res"></div>
+<p class="cn">Perhitungan sederhana. Biaya, waktu pencairan, dan perlakuan pajak berbeda tiap produk; cek prospektus dan fund fact sheet.</p></div>`;
+    function calcDca() {
+      const awl = numv("d-awl"), bln = numv("d-bln"), ret = numv("d-ret"), thn = Math.min(40, Math.max(1, Math.round(numv("d-thn"))));
+      const rm = Math.pow(1 + ret / 100, 1 / 12) - 1;
+      let v = awl, dep = awl; const A = [[0, dep]], B = [[0, v]];
+      for (let m = 1; m <= thn * 12; m++) { v = v * (1 + rm) + bln; dep += bln; if (m % 12 === 0) { A.push([m / 12, dep]); B.push([m / 12, v]) } }
+      const gain = v - dep;
+      $("d-res").innerHTML = [["Total uang yang disetor", rupiah(dep)], ["Perkiraan nilai akhir", rupiah(v)], ["Perkiraan keuntungan", rupiah(gain)], ["Keuntungan terhadap setoran", (dep ? gain / dep * 100 : 0).toFixed(1) + "%"]].map(a => `<div><span>${a[0]}</span><b>${a[1]}</b></div>`).join("");
+      const step = thn > 12 ? Math.ceil(thn / 6) : 1, tk = []; for (let y = 0; y <= thn; y += step)tk.push([y, y + " th"]); if (tk[tk.length - 1][0] !== thn) tk.push([thn, thn + " th"]);
+      $("d-grf").innerHTML = `<div class="cap">Pertumbuhan investasi</div>` + chartSvg([{ name: "Total setoran", color: "var(--mute)", dash: 1, pts: A }, { name: "Nilai investasi (asumsi)", color: "var(--green)", pts: B }], tk, y => y >= 1e9 ? (y / 1e9).toFixed(1) + " M" : y >= 1e6 ? (y / 1e6).toFixed(0) + " jt" : Math.round(y / 1e3) + " rb", 0);
+    }
+    function calcUnit() {
+      const nom = numv("u-nom"), fb = numv("u-fb"), nb = numv("u-nb"), ns = numv("u-ns"), fj = numv("u-fj");
+      if (!(nb > 0)) { $("u-res").innerHTML = "<div><span>Isi NAB per unit saat beli</span><b>–</b></div>"; return }
+      const masuk = nom * (1 - fb / 100), unit = masuk / nb, nilai = unit * ns, biaya = nilai * fj / 100, net = nilai - biaya, gain = net - nom;
+      $("u-res").innerHTML = [["Dana yang masuk setelah biaya beli", rupiah(masuk)], ["Jumlah unit diperoleh", unit.toLocaleString("id-ID", { maximumFractionDigits: 4 }) + " unit"], ["Nilai investasi saat ini", rupiah(nilai)], ["Diterima setelah biaya jual", rupiah(net)], ["Keuntungan atau kerugian", rupiah(gain)], ["Terhadap nominal", (nom ? gain / nom * 100 : 0).toFixed(2) + "%"]].map(a => `<div><span>${a[0]}</span><b>${a[1]}</b></div>`).join("");
+    }
+    function runCalc() { const f = { kupon: calcKupon, yield: calcYield, dca: calcDca, unit: calcUnit }[sel.k]; if (f) f() }
+    function seriesRows(list) { return list.map(x => [x.c, nf(x.ttm, 1) + " th", nf(x.cp, 3) + "%", nf(x.y) + "%", nf(x.p) + "%", bps(x.y, x.yp)]) }
+    const SER_HEAD = ["Seri", "Sisa tenor", "Kupon", "Yield", "Harga wajar", "Δ yield"];
+    function pasarHtml(k, d) {
+      const src = d.asOf ? `<p class="srcnote">Sumber: <a href="${esc(d.url || "https://www.phei.co.id")}" target="_blank" rel="noopener">PHEI</a> (Penilai Harga Efek Indonesia), data per ${fdate(d.asOf)}. Harga dan yield adalah harga wajar PHEI, bukan harga transaksi, dan tidak real-time. Δ yield dibandingkan hari bursa sebelumnya.</p>` : "";
+      if (k === "kurva") {
+        let h = "";
+        if (d.curve && d.curve.length) {
+          const at = t => d.curve.find(x => x.t === t);
+          h += `<div class="tiles">` + [2, 5, 10].map(t => { const x = at(t); return x ? `<div class="tile"><span>SBN ${t} tahun</span><b>${nf(x.y)}%</b><small>${bps(x.y, x.yp)} dari hari sebelumnya</small></div>` : "" }).join("") + `</div>`;
+          const cv = d.curve.filter(x => x.t <= 30);
+          h += `<div class="cap">Kurva imbal hasil SBN per tenor</div>` + chartSvg([{ name: "Terbaru", color: "var(--blue)", pts: cv.map(x => [x.t, x.y]) }, { name: "Hari bursa sebelumnya", color: "var(--mute)", dash: 1, pts: cv.map(x => [x.t, x.yp]) }], [1, 5, 10, 15, 20, 25, 30].map(t => [t, t + " th"]), v => v.toFixed(2));
+        } else h += `<p class="srcnote">Kurva imbal hasil belum dapat dimuat (${esc(d.error || "data kosong")}). Pastikan server terhubung ke internet lalu muat ulang.</p>`;
+        const hs = d.history || [];
+        if (hs.length >= 2) {
+          const P = key => hs.map(x => [Date.parse(x.d), x[key]]);
+          const tk = [hs[0], hs[Math.floor((hs.length - 1) / 2)], hs[hs.length - 1]].map(x => [Date.parse(x.d), fdate(x.d)]);
+          h += `<div class="cap">Riwayat yield SBN 2, 5, dan 10 tahun</div>` + chartSvg([{ name: "2 tahun", color: "var(--green)", pts: P("y2") }, { name: "5 tahun", color: "var(--blue)", pts: P("y5") }, { name: "10 tahun", color: "var(--red)", pts: P("y10") }], tk, v => v.toFixed(2)) + `<p class="srcnote">Riwayat dimulai 12 Okt 2026 dan bertambah setiap ada data hari baru yang terbaca server, jadi makin panjang seiring waktu.</p>`;
+        }
+        if (d.corp && d.corp.length) {
+          const rows = d.corp.filter(x => [1, 3, 5, 10].includes(x.t)).map(x => [x.t + " tahun", nf(x.igs) + "%", nf(x.aaa) + "%", nf(x.aa) + "%", nf(x.a) + "%", nf(x.bbb) + "%"]);
+          h += `<div class="cap">Imbal hasil obligasi korporasi per peringkat (idAAA sampai idBBB)</div>` + tbl(["Tenor", "SBN", "AAA", "AA", "A", "BBB"], rows);
+        }
+        return h + src;
+      }
+      if (d.error) return `<p class="srcnote">Data PHEI belum dapat dimuat (${esc(d.error)}). Pastikan server terhubung ke internet lalu muat ulang.</p>`;
+      if (k === "acuan") return `<div class="cap">SUN acuan (SBN Benchmark)</div>` + tbl(SER_HEAD, seriesRows(d.sbn || [])) + `<div class="cap">Sukuk negara acuan (SBSN)</div>` + tbl(SER_HEAD, seriesRows(d.sbsn || [])) + src;
+      if (k === "ritel") return tbl(SER_HEAD, seriesRows((d.retail || []).slice().sort((a, b) => a.c.localeCompare(b.c)))) + src;
+      return "";
+    }
+    function staticHtml(k) {
+      const t = todayISO();
+      if (k === "jadwal") {
+        const bd = s => t < s.mulai ? '<span class="bd bd-soon">Akan datang</span>' : t > s.akhir ? '<span class="bd bd-done">Selesai</span>' : '<span class="bd bd-open">Sedang dibuka</span>';
+        return tbl(["Seri", "Jenis dan tenor", "Kupon", "Masa penawaran", "Status", "Catatan"], SERI.ritel.map(s => [s.c, esc(s.tenor), `<div class="wr">${esc(s.kupon)}</div>`, fdate(s.mulai) + " – " + fdate(s.akhir), bd(s), `<div class="wr">${esc(s.ket)}</div>`])) + `<p class="srcnote">Kupon ORI dan SR tetap. Kupon SBR dan ST adalah batas minimal (mengambang dengan batas bawah). Jadwal tentatif dan dapat berubah; data dihimpun dari pengumuman DJPPR melalui pemberitaan dan penyedia produk, jadi cek ketentuan resmi di djppr.kemenkeu.go.id sebelum memesan.</p>`;
+      }
+      if (k === "jenis") return tbl(["Jenis", "Isi portofolio (aturan umum)", "Risiko", "Horizon umum"], JENISRD.map(r => [`<b>${esc(r[0])}</b>`, `<div class="wr">${esc(r[1])}</div>`, esc(r[2]), esc(r[3])])) + `<p class="srcnote">Aturan komposisi mengacu pada ketentuan OJK dan dapat berubah. Horizon adalah pedoman umum, bukan aturan. Jenis lain seperti indeks, ETF, terproteksi, syariah, dan global ada di topik berikutnya.</p>`;
+      if (k === "fr") return tbl(["Seri", "Kupon", "Jatuh tempo", "Sisa tenor"], SERI.fr.map(s => [s.c, s.kupon == null ? "belum terverifikasi" : nf(s.kupon, 3) + "%", fdate(s.jt), nf((new Date(s.jt) - new Date(t)) / 31557600000, 1) + " th"])) + `<p class="srcnote">Ini hanya sebagian seri; banyak seri FR lain beredar dan seri baru terbit di setiap lelang. Kupon dan jatuh tempo dihimpun dari pengumuman lelang DJPPR dan penyedia produk. Harga dan yield seri acuan ada di menu Data pasar.</p>`;
+      return "";
+    }
+    async function renderArticle() {
+      $("hc").textContent = sel.n; $("hn").textContent = sel.s + " · " + (market === "reksa" ? "Reksa dana" : "Obligasi");
+      ctx.harga = null;
+      const id = sel.c, base = md(sel.t);
+      if (["kurva", "acuan", "ritel"].includes(sel.k)) {
+        $("article").innerHTML = base + '<p class="srcnote">Memuat data dari PHEI…</p>';
+        const d = await loadOb();
+        if (!LEARN() || sel.c !== id) return;
+        $("article").innerHTML = base + pasarHtml(sel.k, d);
+        return;
+      }
+      $("article").innerHTML = base + (sel.k === "kupon" ? KUPON_HTML : sel.k === "yield" ? YIELD_HTML : sel.k === "dca" ? DCA_HTML : sel.k === "unit" ? UNIT_HTML : staticHtml(sel.k));
+      runCalc();
+    }
+    $("article").addEventListener("input", runCalc);
+
+    /* Menu pasar: Saham IDX / S&P 500 / Obligasi */
+    const NOTE = { bond: "", reksa: "", etf: "Sumber data: Yahoo Finance. Ini harga pasar ETF di bursa, bukan NAB, dan tertunda. ETF sering jarang diperdagangkan, jadi harga bisa tidak bergerak berhari-hari dan sedikit berbeda dari NAB. Daftar hanya sebagian ETF, dan sebagian mungkin sudah tidak tercatat.", idx: "Sumber data: Yahoo Finance. Harga tertunda dan bukan real-time.", sp: "Sumber data: Yahoo Finance. Harga dalam dolar AS (US$), tertunda dan bukan real-time. Daftar di menu ini hanya sebagian contoh konstituen S&P 500." };
+    function setMarket(k) {
+      if (k === market || !MARKETS[k].list.length) return;
+      market = k; S = MARKETS[k].list; sector = "Semua"; query = ""; tab = 1;
+      $("q").value = ""; $("q").placeholder = MARKETS[k].ph;
+      $("sidetitle").textContent = MARKETS[k].title; $("cnote").textContent = NOTE[k];
+      $("t1").textContent = k === "bond" ? "Berita obligasi" : k === "reksa" ? "Berita reksa dana" : k === "etf" ? "Terkait ETF" : "Terkait saham";
+      document.body.dataset.m = k;
+      document.querySelectorAll("#mnav button").forEach(b => b.classList.toggle("on", b.dataset.m === k));
+      buildSectors(); sel = S[0];
+      renderSide(); renderChart(); renderNews();
+      $("list").scrollTop = 0;
+    }
+    $("mnav").addEventListener("click", e => { const b = e.target.closest("[data-m]"); if (b) setMarket(b.dataset.m) });
+    [["sp", SPX], ["bond", BND], ["reksa", RKD], ["etf", ETFL]].forEach(([m, l]) => { if (!l.length) document.querySelector(`#mnav [data-m="${m}"]`).style.display = "none" });
+
+    /* Tombol ringkasan AI: Gemini hanya dipanggil saat tombol diklik */
+    $("feed").addEventListener("click", async e => {
+      const b = e.target.closest("#aibtn"); if (!b || b.disabled) return;
+      const id = nt; b.disabled = true; b.textContent = "Meringkas…";
+      try {
+        const r = await fetch(newsBase + "&ai=1"); const j = await r.json();
+        if (id !== nt) return;
+        if (!r.ok || !j.summary) throw new Error();
+        const box = b.closest(".ai"); box.className = "ai"; box.innerHTML = `<b>Ringkasan AI</b><p>${esc(j.summary)}</p>`;
+      } catch (err) {
+        if (id !== nt) return;
+        b.disabled = false; b.textContent = "Ringkas dengan AI";
+        const n = b.parentElement.querySelector("small"); if (n) n.textContent = "Ringkasan gagal dibuat. Kuota Gemini mungkin penuh, coba lagi nanti.";
+      }
+    });
+
     /* ---------- Asisten AI ---------- */
     const ctx = {}, hist = []; let busy = false;
     const shell = document.querySelector(".shell"), clog = $("clog");
@@ -1032,12 +1807,12 @@ AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
     function toggleChat(open) { shell.classList.toggle("chat-open", open); $("cbtn").setAttribute("aria-expanded", open); if (open) $("ci").focus() }
     $("cbtn").onclick = () => toggleChat(!shell.classList.contains("chat-open"));
     $("cclose").onclick = () => toggleChat(false);
-    addMsg("bot", "Halo! Saya bisa membantu membahas saham Indonesia: istilah dan rasio keuangan, sektor, atau berita yang sedang Anda lihat. Saya tidak memberi saran beli atau jual, dan pertanyaan di luar topik saham tidak akan saya jawab.");
+    addMsg("bot", "Halo! Saya bisa membantu membahas saham Indonesia, indeks atau saham AS di S&P 500, obligasi, reksa dana, dan ETF: istilah dan rasio keuangan, sektor, atau berita yang sedang Anda lihat. Saya tidak memberi saran beli atau jual, dan pertanyaan di luar topik saham tidak akan saya jawab.");
     async function send(text) {
       busy = true; hist.push({ role: "user", content: text }); addMsg("user", text);
       const w = addMsg("bot", "Sedang menjawab…"); w.classList.add("wait");
       try {
-        const r = await fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ messages: hist.slice(-12), context: { code: sel.c, name: sel.n, sector: sel.s, ...ctx } }) });
+        const r = await fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ messages: hist.slice(-12), context: { code: sel.c, name: sel.n, sector: sel.s, market, ...ctx } }) });
         const j = await r.json();
         if (!r.ok) throw new Error(j.error || "Gagal menghubungi asisten.");
         w.classList.remove("wait"); w.textContent = j.reply; if (j.refused) hist.pop(); else hist.push({ role: "assistant", content: j.reply });
@@ -1048,6 +1823,16 @@ AMRT|Sumber Alfaria Trijaya|Konsumsi Primer`;
     $("cf").addEventListener("submit", e => { e.preventDefault(); const t = $("ci").value.trim(); if (!t || busy) return; $("ci").value = ""; send(t) });
     $("ci").addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("cf").requestSubmit() } });
     $("sug").addEventListener("click", e => { const b = e.target.closest("[data-t]"); if (b && !busy) send(b.dataset.t) });
+    /* Laci daftar saham (HP) */
+    const mq = window.matchMedia("(max-width:860px)");
+    function setSide(open) { shell.classList.toggle("side-open", open); $("menu").setAttribute("aria-expanded", open) }
+    $("menu").onclick = () => setSide(!shell.classList.contains("side-open"));
+    $("sidex").onclick = () => setSide(false);
+    $("scrim").onclick = () => setSide(false);
+    document.addEventListener("keydown", e => { if (e.key === "Escape") setSide(false) });
+    $("list").addEventListener("click", e => { if (e.target.closest("[data-c]") && mq.matches) { setSide(false); window.scrollTo({ top: 0, behavior: "smooth" }) } });
+    $("sf").addEventListener("submit", () => { if (mq.matches) setSide(false) });
+    mq.addEventListener("change", () => setSide(false));
   </script>
 </body>
 

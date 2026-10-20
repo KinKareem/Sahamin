@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "import:idx": "node scripts/import-idx.js",
-    "test:gemini": "node scripts/test-gemini.js"
+    "test:gemini": "node scripts/test-gemini.js",
+    "test:feeds": "node scripts/test-feeds.js"
   },
   "engines": {
     "node": ">=18"
